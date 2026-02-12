@@ -1,0 +1,150 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{chlondThreedimensionalSimulationCloud1992}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8fab8c7f6564ab619ddf7056add59df2}{%
+           family={Chlond},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8fab8c7f6564ab619ddf7056add59df2}
+      \strng{fullhash}{8fab8c7f6564ab619ddf7056add59df2}
+      \strng{bibnamehash}{8fab8c7f6564ab619ddf7056add59df2}
+      \strng{authorbibnamehash}{8fab8c7f6564ab619ddf7056add59df2}
+      \strng{authornamehash}{8fab8c7f6564ab619ddf7056add59df2}
+      \strng{authorfullhash}{8fab8c7f6564ab619ddf7056add59df2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A three-dimensional numerical model is used to study boundary-layer eddy structure during a cold air outbreak. The model explicitly represents the large-scale three-dimensional motions, while small-scale turbulence is parameterized; it contains a water cycle with cloud formation and it takes into account infrared radiative cooling in cloudy conditions and the influence of large-scale vertical motions.}
+      \field{issn}{0006-8314, 1573-1472}
+      \field{journaltitle}{Boundary-Layer Meteorology}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1--2}
+      \field{shortjournal}{Boundary-Layer Meteorol}
+      \field{title}{Three-Dimensional Simulation of Cloud Street Development during a Cold Air Outbreak}
+      \field{urlday}{27}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{volume}{58}
+      \field{year}{1992}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{161\bibrangedash 200}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1007/BF00120757
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/8KFSCZF4/Chlond - 1992 - Three-dimensional simulation of cloud street development during a cold air outbreak.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF00120757
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF00120757
+      \endverb
+    \endentry
+    \entry{giovanniniMultimodelConvectionresolvingSimulations2021}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=5361f1c3e724a2ec9555b13e492a5330}{%
+           family={Giovannini},
+           familyi={G\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41781ab80208c1c646dbb019e1720dc4}{%
+           family={Davolio},
+           familyi={D\bibinitperiod},
+           given={Silvio},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3292a0383fd2e8b1e3022f97d8bff1a8}{%
+           family={Zaramella},
+           familyi={Z\bibinitperiod},
+           given={Mattia},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=185bb980b2bdc7d5d242aae2e73dae3d}{%
+           family={Zardi},
+           familyi={Z\bibinitperiod},
+           given={Dino},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=63b9d9614bbdcc6e6ca7608911597bc3}{%
+           family={Borga},
+           familyi={B\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7445b15b7ca925e43b39496ca76cb801}
+      \strng{fullhash}{7c487778107de0579eb7e6071bdc93a2}
+      \strng{bibnamehash}{7445b15b7ca925e43b39496ca76cb801}
+      \strng{authorbibnamehash}{7445b15b7ca925e43b39496ca76cb801}
+      \strng{authornamehash}{7445b15b7ca925e43b39496ca76cb801}
+      \strng{authorfullhash}{7c487778107de0579eb7e6071bdc93a2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The aim of this study is to identify the main mesoscale features and mechanisms responsible for the generation of a very intense precipitation and wind storm event, named “Vaia”, that affected the eastern Italian Alps on 27–29 October 2018. The event was characterized by extreme accumulated precipitation (up to 850 mm in three days) and exceptionally strong winds, causing severe and widespread impacts, such as floods, landslides, and extensive damages to forests and growing stock. The synoptic situation was characterized by a trough, which deepened over the eastern Atlantic, extending to France and Spain, driving a strong moist flow towards the Alpine region. At the surface, a wide cyclonic area developed over the western Mediterranean, east of the trough axis, and moved, deepening, towards northwestern Italy. The storm is investigated using a comprehensive dataset composed of both observations and numerical simulations by means of two models, namely WRF and MOLOCH, at convection-permitting resolution. The analysis highlights that the storm was characterized by two consecutive phases with strong precipitations, both fed by an intense moist southerly flow. In particular, the second phase was also marked by strong wind gusts in the Alpine area, exceeding 50 m s 1 at some weather stations. It is found that these extreme wind gusts were connected to the presence of an intense southerly low-level jet immediately ahead of a cold front, displaying an average wind speed of 35 m s 1 at 1500 m MSL. The comparison between observations and numerical results shows that the main characteristics of the storm are well simulated by both models, confirming the high predictability of this kind of events, typically associated with well-defined largescale forcing. Also local scale features are reasonably captured by the simulations, despite the high complexity of the Alpine orography. However, WRF significantly underestimates total precipitation amounts over the most affected areas, while wind speed is overestimated by both models in the inner Alpine sectors.}
+      \field{issn}{01698095}
+      \field{journaltitle}{Atmospheric Research}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{shortjournal}{Atmospheric Research}
+      \field{title}{Multi-Model Convection-Resolving Simulations of the {{October}} 2018 {{Vaia}} Storm over {{Northeastern Italy}}}
+      \field{urlday}{27}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{volume}{253}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{105455}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.atmosres.2021.105455
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/TN2RY4K6/Giovannini et al. - 2021 - Multi-model convection-resolving simulations of the October 2018 Vaia storm over Northeastern Italy.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0169809521000077
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0169809521000077
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

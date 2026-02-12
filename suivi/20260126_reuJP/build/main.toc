@@ -1,0 +1,3 @@
+\beamer@subsectionintoc {0}{1}{Dernière discussion}{2}{0}{0}
+\beamer@subsectionintoc {0}{2}{Rapport simulation}{4}{0}{0}
+\beamer@subsectionintoc {0}{3}{Suite}{6}{0}{0}

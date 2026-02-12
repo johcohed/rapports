@@ -1,0 +1,131 @@
+\input{../beamer_settings.tex}
+%\addbibresource{Rolls.bib}
+\graphicspath{{../../../FIGURES/}}
+
+%Title Page
+\title{Réunion Jeudi 20/11/2025}
+\author{}
+
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{../../groupeThese.bib}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Le projet}
+\textbf{Mes buts :}
+
+\begin{itemize}
+  \item Reproduire des rouleaux dans un \textbf{cadre idéalisé} (travail de Wahiba et Thomas)
+  \item Influence des paramètres (profil de température, flux de surface, hétéréogénéité des flux, vents) sur les rouleaux (taille, formation, durée de vie)
+  \item Evaluer transports de moments par les rouleaux ? (\cite{gryschkaImpactForcedRoll2014}) 
+  \item Paramétrisation des rouleaux ? (\cite{fosterWhyRollsAre2005},  \cite{wangDeepLearningParameterization2023})
+  \item Avoir descriptions moodèle forward des rouleaux pour ensuite faire le problème inverse et récupérer des flux ? 
+  \end{itemize}
+  \textbf{Etat d'avancement:}
+  \begin{itemize}
+    \item  Test pour obtenir des rouleaux avec des domaines idéeaux et simples. Lecture de littérature. 
+  \end{itemize}
+\end{frame}
+
+\section{Experience noVAPOR}
+\begin{frame}{Simulation noVAPOR}
+ \begin{columns}
+ \begin{column}{0.48\textwidth}
+ \begin{itemize}
+	\item Air sec, pas de vapeur d'eau. 
+	\item Forte inversion de température - vents proche de Wahiba 
+  \item Bords ouverts 
+	\item Grand domaine pour avoir formation de rouleaux mais couteux
+\end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{figure}
+	\includegraphics[width=0.4\textheight]{noVAPOR/inputs.png}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\subsection{Profiles vitesses}
+\begin{frame}{Profiles}
+Pb vents verticaux en altitude + CL se stabilise (peut etre du a temperétaure au sol plus faible que profil de temp dans mNH)
+	\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.7\textwidth]{noVAPOR/wind_profiles.png}
+	\end{figure}
+\end{frame}
+
+\subsection{Flux}
+\begin{frame}{Flux}
+Flux sensible cohérent avec papier de Wahiba ; un peu trop forts ($\approx 100W.m^{-2}$)
+	\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.7\textwidth]{noVAPOR/fluxes.png}
+	\end{figure}
+\end{frame}
+
+\subsection{WT}
+\begin{frame}{Vitesses verticales}
+	petits rouleaux (dû à des flux trop forts ? ressemble à des free rolls \> pas d'influence des flux ?) faire tracé de f ? 
+	\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.7\textwidth]{noVAPOR/WT_ni350_t20.png}
+	\end{figure}
+\end{frame}
+
+
+\section{Experience miniROLLS}
+\begin{frame}{Simulation miniROLLS}
+ \begin{columns}
+ \begin{column}{0.48\textwidth}
+ \begin{itemize}
+	\item remise bords cyclique pour accélerer le CT (conditionne surement le nombre de rouleaux mais a étudier quand on en a)
+	\item mise de profils exacts de Wahiba (par contre on enleve la forte inversion )
+	\item $\Delta x = \Delta y = 100m$ ; $\Delta t = 0.5 s$ pou temps de calcul correct
+\end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{figure}
+	\includegraphics[width=0.4\textheight]{miniROLLS/inputs.png}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\subsection{Profiles vitesses}
+\begin{frame}{Profiles}
+Pb vents verticaux en altitude + CL se stabilise (peut etre du a temperétaure au sol plus faible que profil de temp dans mNH)
+	\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.7\textwidth]{miniROLLS/wind_profiles.png}
+	\end{figure}
+\end{frame}
+
+\subsection{Flux}
+\begin{frame}{Flux}
+Flux plus cohérent avec Wahiba et stables; tjs couche qui se stabilise avec un sol plus froid que la temperature du niveau 0 \hl{a changer}
+	\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.7\textwidth]{miniROLLS/fluxes.png}
+	\end{figure}
+\end{frame}
+
+\subsection{WT}
+\begin{frame}{Vitesses verticales}
+  Vitesses verticales plus faible mais bruit : problème au bord droit qui se propage toujours ? 
+	\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.7\textwidth]{miniROLLS/WT_ni100_t20.png}
+	\end{figure}
+\end{frame}
+\end{frame}
+\begin{frame}{}
+\printbibliography
+
+\end{frame}
+
+
+\end{document}   

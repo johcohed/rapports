@@ -1,0 +1,133 @@
+\input{../beamer_settings.tex}
+%\addbibresource{Rolls.bib}
+\graphicspath{{FIGURES/}}
+
+%Title Page
+\title{Réunion Vendredi 16/01/2026}
+\author{}
+
+\usepackage[caption = false]{subfig}
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Dernière discussion}
+Ce qu'on avait dit
+  \begin{itemize}
+    \item \textbf{Intérêt d'introduire un forçage de grande échelle} : on veut pas voir influence de la petite échelle. Plutôt la grande échelle sur la petite échelle. 
+    \item Gagner en tps de calcul : limiter simulation à 30min
+    \item Contacter chercheurs DEPHY
+    \item Regarder subsidence dans le dvp de la couche limite
+    \item \textbf{Méthode}: Mieux caractériser et systématiser les structures en rouleaux. 
+    \item \textbf{Presentation}: Meilleure palette de couleurs
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Simulation withRELAX\_1D et withRELAX\_3D}
+	
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+		Relaxation sur le profil de vent et la température. Question sur sst : choix 295K(2018)
+		\begin{table}[h!]
+			 \centering
+			\begin{tabular}{c|c}
+				sst & 295 K  \\
+				$\tau$ de force de rappel & 200 s  \\
+			\end{tabular}
+			\caption{Caption}
+			\label{tab:my_label}
+		\end{table}
+	Forcde rappel peut etre trop forte; compétition avec la turbulence
+	\end{column}
+	\hfill
+	\begin{column}{0.5\textwidth}
+		\begin{figure}[h!]
+			\begin{center}
+				\includegraphics[width=0.8\textwidth]{janvier/inputs.png}
+			\end{center}
+			\caption{}\label{fig:}
+		\end{figure}
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[h!]
+		\begin{center}
+			\includegraphics[width=0.8\textwidth]{sst.png}
+		\end{center}
+		\caption{}\label{fig:}
+	\end{figure}
+\end{frame}
+
+
+% -------------------------------------------
+\begin{frame}
+En 1D: 
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=0.95\textwidth]{EVOL_1D.png}
+		\end{center}
+		\caption{Time evolution of MEANWIND}\label{fig:}
+	\end{figure}
+\end{frame}
+\begin{frame}
+	En 1D: 
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=0.9\textwidth]{fluxes_1D.png}
+		\end{center}
+		\caption{Evolution temporelle des flux sensible}\label{fig:}
+	\end{figure}
+$\zeta$ ok pour avoir rouleaux selon observations. \\
+Rappel efficace en 1D -- on peut passer en 3D
+\end{frame}
+
+
+% --------------------------------------------
+\begin{frame}{WithRELAX\_3D}
+	En 3D dx = 25, DEAR; etat stationnaire $t>20 min$
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=0.9\textwidth]{EVOL_3D.png}
+		\end{center}
+		\label{fig:}
+	\end{figure}
+\end{frame}
+\begin{frame}
+	Plot of $\bar \phi - \langle \bar \phi \rangle$ with the bar the temperal mean between 50min and 90 min. 
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=1.1\textwidth]{rolls_ni_10_tmin50_tmax99.png}
+		\end{center}
+	\end{figure}
+\end{frame}
+
+\begin{frame} 
+	At z = 150m, plot of $R_W \approx 0.3<< 0.8 \approx R_{W}^{LFAHR}$ . 
+	\begin{figure}
+	\includegraphics[width=1.1\textwidth]{rolls_level_10_tmin50_tmax99.png}
+	\includegraphics[width=1.1\textwidth]{R_autocorr_tmin50_tmax99.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	Analyse spectrale, level=20 ie $\approx 200m$
+	\begin{figure}
+		\includegraphics[width=1.1\textwidth]{spectrum.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Suite ...}
+	\begin{itemize}
+		\item possibilité de modes secondaire ? 
+		\item calculer f, $L_{OS}$
+		\item Introduuire role humidité? condensation
+		\item ()refaire analyse de stabilité ?)
+		 
+	\end{itemize}
+\end{frame}
+
+
+\end{document}   

@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'build/main.blg'
+[36] biber:340> INFO - === mar. janv. 27, 2026, 08:51:42
+[45] Biber.pm:419> INFO - Reading 'build/main.bcf'
+[76] Biber.pm:979> INFO - Found 2 citekeys in bib section 0
+[83] Biber.pm:4419> INFO - Processing section 0
+[89] Biber.pm:4610> INFO - Looking for bibtex file '../../groupeThese.bib' for section 0
+[94] bibtex.pm:1713> INFO - LaTeX decoding ...
+[134] bibtex.pm:1519> INFO - Found BibTeX data source '../../groupeThese.bib'
+[160] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[160] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[160] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[161] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[164] bbl.pm:660> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[165] bbl.pm:763> INFO - Output to build/main.bbl

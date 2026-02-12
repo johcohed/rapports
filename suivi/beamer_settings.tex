@@ -1,0 +1,89 @@
+% a simple template with cesbio color code
+
+\documentclass[xcolor=table, t, aspectratio=169]{beamer} 
+\graphicspath{{../FIGURES/}}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs, comment} 
+\usepackage[absolute, overlay]{textpos} 
+\usepackage{pgfpages}
+\usepackage{caption}
+\usepackage[font=footnotesize]{caption}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{blindtext}
+\usepackage{amsmath}
+\usepackage[makeroom]{cancel}
+\usepackage{textpos}
+\usepackage{tikz}
+\usepackage{csquotes}
+\usepackage{graphicx}
+
+
+% CESBIO ADAPTED COLOURS 
+\definecolor{colorLAERO}{RGB}{67, 141, 204}
+\definecolor{forestgreen}{rgb}{0.13, 0.55, 0.13}
+\definecolor{greenyellow}{rgb}{0.68, 1.0, 0.18}
+\definecolor{inchworm}{rgb}{0.7, 0.93, 0.36}
+
+% OPTIONAL COLOURS
+% you can add the ones you need : lot of proposition on http://latexcolor.com/
+\definecolor{ballblue}{rgb}{0.13, 0.67, 0.8}
+\definecolor{bluegreen}{rgb}{0.0, 0.87, 0.87}
+\definecolor{chromeyellow}{rgb}{1.0, 0.65, 0.0}
+\definecolor{darkcyan}{rgb}{0.0, 0.55, 0.55}
+\definecolor{darkpastelred}{rgb}{0.76, 0.23, 0.13}
+\definecolor{electricgreen}{rgb}{0.0, 1.0, 0.0}
+\definecolor{electriclime}{rgb}{0.8, 1.0, 0.0}
+\definecolor{deepcarrotorange}{rgb}{0.91, 0.41, 0.17}
+
+% CESBIO ADAPTED BEAMER OPTIONS
+\setbeamercolor{title in head/foot}{bg=inchworm, fg=forestgreen}
+\setbeamercolor{author in head/foot}{bg=colorLAERO}
+\setbeamertemplate{page number in head/foot}{}
+
+\useoutertheme{infolines}
+\usetheme{Warsaw}
+\usecolortheme[named=colorLAERO]{structure}
+
+% SPECIFIC COMMANDS
+% if you nee to set command for youe presentation, you can put them here
+\newcommand{\defnotation}[1]{\bf{\textsl{#1}}}
+
+
+
+% PRESENTATION INFORMATIONS
+% to fill in
+
+% \title[]{}
+% \subtitle{Subtitle}
+
+\titlegraphic{\includegraphics[height=2.0cm]{LAERO-logo.jpg}}
+\author[J.Hedman]{Johan Hedman}
+\institute[]{Team\\ LAERO}
+\date{\today}
+
+\usepackage[
+	citestyle=abbrv, 
+    bibstyle=abbrv,
+    style=authoryear, %-comp,
+    backend=biber
+    %maxbibnames=99, % Make sure we are printing all authors in the appendix
+    ]{biblatex}
+
+
+% cesbio adapted frame structure
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+
+\usepackage{soul}
+\makeatletter
+\let\HL\hl
+\renewcommand\hl{%
+  \let\set@color\beamerorig@set@color
+  \let\reset@color\beamerorig@reset@color
+  \HL}
+\makeatother

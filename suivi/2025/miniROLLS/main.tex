@@ -1,0 +1,79 @@
+\input{../beamer_settings.tex}
+%\addbibresource{Rolls.bib}
+\graphicspath{{../../../FIGURES/}}
+
+%Title Page
+\title{Réunion Jeudi 20/11/2025}
+\author{}
+
+% \usepackage[backend=biber,style=authoryear]{biblatex}
+% \addbibresource{../../groupeThese.bib}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Le projet}
+\end{frame}
+
+\section{Experience miniROLLS}
+\subsection{Setup}
+\begin{frame}{Simulation miniROLLS}
+ \begin{columns}
+ \begin{column}{0.48\textwidth}
+\begin{table}
+  \caption{}\label{tab:}
+  \begin{center}
+    \begin{tabular}[c]{l|l}
+      $\Delta t$ & 0.2 s\\
+      $\Delta x$, $\Delta y$ & 50 m \\
+      $n_i \times n_j \times n_k$ & 600 x 60 x 80 \\
+      Set coriolis & False \\
+      sea surface & ECUME6 
+    \end{tabular}
+  \end{center}
+\end{table}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{figure}
+	\includegraphics[width=0.6\textheight]{miniROLLS/inputs.png}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\subsection{Flux}
+\begin{frame}{Flux Sensible}
+Après 50 min, flux est stationnaire. 
+  \begin{figure}
+    \begin{center}
+      \includegraphics[width=1\textwidth]{miniROLLS/fluxes.png}
+    \end{center}
+    \caption{Evolution temporelle du flux sensible moyen sur le domaine}\label{fig:SHF}
+  \end{figure}
+\end{frame}
+
+% \subsection{Coupe verticale de vitesse}
+\begin{frame}{Vitesses verticales}
+ Plot la turbulence organisée :
+ $ \overline{W'} = \overline W - \langle \overline W \rangle_{y}$ 
+où $ \overline W$ est la vitesse moyennée sur 1 heure. 
+
+\begin{figure}
+\begin{overprint}
+    \begin{center}
+    \only<1>{\includegraphics[width=1\textwidth]{miniROLLS/cut_100.png}}
+    \only<2>{\includegraphics[width=1\textwidth]{miniROLLS/cut_300.png}}
+    \only<3>{\includegraphics[width=1\textwidth]{miniROLLS/cut_400.png}}
+    \only<4>{\includegraphics[width=1\textwidth]{miniROLLS/cut_500.png}}
+    \end{center}
+\end{overprint}
+\end{figure}
+\end{frame}
+
+
+
+
+
+\end{document}   

@@ -1,0 +1,111 @@
+\input{../beamer_settings.tex}
+\addbibresource{../../groupeThese.bib}
+\graphicspath{{FIGURES/}}
+
+%Title Page
+\title{Réunion Lundi 02/02/2026}
+\author{}
+
+\usepackage[caption = false]{subfig}
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Dernière discussion}
+Ce qu'on avait dit
+  \begin{itemize}
+    \item Forçage géostrophique, nudging, nudging du vent moyen
+    \item Humidité relative 
+    \item Automatisation : pas explorer tout les possibles + avoir simu de référence avant
+    \item Relief sur les rouleaux (\cite{swathiUniqueRollClouds2025})
+    \item Perturbation ? Il faut surement les deux !!!!
+    \item Diag rolls: bilan flux turbulents, disytribution vitess, 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Simulation ADRIAN\_3D}
+\begin{minipage}{0.5\textwidth}
+	\centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    \multirow{4}{*}{\rotatebox{90}{Prep ideal}} 
+               & Domain size & 10 x 10 x 1.6 km \\
+               & discretization & $dx = dy = 50m$\\
+               &  & $ 10m \leq dz \leq 20m$ \\
+               & Boundaries & 2* cyclic, no slip \\
+               \hline \hline
+    \multirow{6}{*}{\rotatebox{90}{mesonh}} 
+               & Schemes & TKEL, REVE \\ 
+               & Mixing length & DEARDOFF \\
+               & Integration step & 0.04 s \\
+               & Advection & CEN4TH \\
+               & Temporal  & RK4 \\
+               & Relaxation & Wind, Temp \\
+               & $\tau^{relax} & 300 s\\
+     \hline \hline
+    \multirow{3}{*}{\rotatebox{90}{profiles}} 
+               & h(inflection) &  \\
+               & $\theta_g$ & 291K\\
+               & sst  & $ 295 K$\\
+               \hline
+  \end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth} 
+  \centering
+  \includegraphics[width=1\textwidth]{input.png}
+\end{minipage}
+\end{frame}
+
+
+% --------------------------------------------
+% -- Evolution --
+% --------------------------------------------
+\begin{frame}
+Evolution des moyennes $\propto$ temps : obtention régime stationnaire, RV initilisé de façon naive est modifié (futur : rv bien init et forcé !)\\
+$\zeta \approx 0.4$ compatible avec rouleaux et Adrian (Lfahr $\approx 0.5 / 0.7$)\\
+  \includegraphics[width=1\textwidth]{evolADRIAN.png}
+\end{frame}
+
+\begin{frame}
+Apreès 15min, spinup terminé; flux decroissant jusqu'à 25min. 
+\includegraphics[width=1\textwidth]{fluxes.png}
+
+\end{frame}
+
+\begin{frame}
+HBL = 500m, et on voit que TKE est constante sur toute la hauteur: on a bien des structures. 
+  \includegraphics[width=1\textwidth]{R_spectre.png}
+\end{frame}
+
+% -------------------------------------------
+%   structure
+% ---------------------------------------------
+\begin{frame}
+Etude des structure à $t=30min$
+\includegraphics[width=1\textwidth]{autocorr_t30.png}
+\end{frame}
+
+\begin{frame}
+Moyenne temporelle sur $t = [20,30]$ min
+\includegraphics[width=1\textwidth]{rolls_ni_100_tmin20_tmax30.png}
+\includegraphics[width=1\textwidth]{rolls_level_10_tmin20_tmax30.png}
+\end{frame}
+
+\begin{frame}
+Moyenne temporelle sur $t = [27,30]$ min : tps plus court mais flux plus stationnaires
+\includegraphics[width=1\textwidth]{rolls_ni_100_tmin27_tmax30.png}
+\includegraphics[width=1\textwidth]{rolls_level_10_tmin27_tmax30.png}
+\end{frame}
+
+
+% -------------------------------------------
+%   Adrian
+% ---------------------------------------------
+\begin{frame}
+Récupération de données sur la tempête Adrian
+\includegraphics[width=1\textwidth]{cut.png}
+Travail de script pour accès rapide.. Recherche de profil de vent, $\theta_v$ et $rv$. Comparaison de rouleaux
+\end{frame}
+\end{document}   

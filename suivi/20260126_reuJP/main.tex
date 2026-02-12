@@ -1,0 +1,82 @@
+\input{../beamer_settings.tex}
+\addbibresource{../../groupeThese.bib}
+\graphicspath{{FIGURES/}}
+
+%Title Page
+\title{Réunion Mardi 27/01/2026}
+\author{}
+
+\usepackage[caption = false]{subfig}
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\subsection{Dernière discussion}
+\begin{frame}{Dernière discussion}
+Ce qu'on avait dit
+  \begin{itemize}
+    \item \textbf{Intérêt d'introduire un forçage de grande échelle} : On veut un champ de large échelle qui comprend pas la petite échelle ! Forcer seulement le CCB et pas la couche limite ? (pas fait)
+    \item rappel surement trop fort, $\tau$ à augmenter (pas fait)
+    \item spectre ok on a pic pour rouleaux mais se déplace pou dx dim; pas de grde longueur d'onde
+    \begin{figure}
+    	   \centering
+    	\begin{minipage}{.5\textwidth}
+    		\centering
+		\includegraphics[width=0.9\textwidth]{spectre_LFAHR.png}
+    	\end{minipage}%
+    	\begin{minipage}{0.5\textwidth}
+    		\centering
+		\includegraphics[width=0.6\textwidth]{spectre_MOI.png}
+    	\end{minipage}
+
+	\end{figure}
+    
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Retour réu MesoNH}
+	\begin{itemize}
+		\item Pk sur mer ?
+    \item Influence de l'humidité
+    \item $dz$ 
+
+	\end{itemize}
+\end{frame}
+
+\subsection{Rapport simulation}
+\begin{frame}{Travail sur simulation}
+	\begin{itemize}
+		\item Ajout de la vapeur d'eau, 1 g/kg (mais profil de Adrian?) \\
+		+ schéma de micro physique : REVE
+		\item Agrandissement taille de domaine : 10km x 10km x 1km ($\Delta z$ A AUGMENTER)
+		\item Simualtion dvp couche limite en  LES en CAO \cite{chlondThreedimensionalSimulationCloud1992} : vents de 25m/s, grille cyclique 6 x 6 x 1.6 km, prise en compte condensation, rayonnement IR, subsidence de grande échelle, humidité de grande échelle, chauffage du sol(t)  
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{betterDOMAIN\_3D}
+Pas de rouleaux	
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{rolls_ni_10_tmin20_tmax32.png}
+	\includegraphics[width=0.8\textwidth]{R_autocorr_tmin20_tmax32.png}
+\end{figure}
+\end{frame}
+
+\subsection{Suite}
+\begin{frame}{Piste 1: Automatisation test}
+	\begin{figure}[h!]
+    	\centering
+		\includegraphics[width=0.7\textwidth]{projet.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Piste 2: Cas idélaisé de Adrian suite}
+\begin{itemize}
+\item Quelle perturbation ? Influence de ce choix ? (dans \cite{chlondThreedimensionalSimulationCloud1992} perturbation temp au dernier niveau) 
+\item Continuer de travailler sur ce cas mais il faut des profils. Possibilité sur l’Italie. \cite{giovanniniMultimodelConvectionresolvingSimulations2021}
+\item Output de la simulation de Wahbiba ? 
+\end{itemize}
+\end{frame}
+\end{document}   

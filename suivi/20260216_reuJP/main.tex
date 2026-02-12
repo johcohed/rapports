@@ -1,0 +1,166 @@
+\input{../beamer_settings.tex}
+\addbibresource{../../groupeThese.bib}
+\graphicspath{{FIGURES/}}
+
+%Title Page
+\title{Réunion Lundi 12/02/2026}
+\author{}
+
+\usepackage[caption = false]{subfig}
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Dernière discussion}
+Ce qu'on avait dit
+  \begin{itemize}
+    \item Enlever nudging du vent W pour clarifier la méthode
+    \item 
+    \item Relief sur les rouleaux (\cite{swathiUniqueRollClouds2025})
+    \item Perturbation ? Application d'une perturabtion sur le vent car instabilité la plus forte
+    \item Diag rolls: bilan flux turbulents, disytribution vitesse toujours à faire 
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Simulation ADRIAN\_3D}
+\begin{minipage}{0.5\textwidth}
+	\centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    \multirow{4}{*}{\rotatebox{90}{Prep ideal}} 
+               & Domain size & \hl{10 x 10} x 1.6 km \\
+               & discretization & $dx = dy = 50m$\\
+               &  & $ 10m \leq dz \leq 20m$ \\
+               & Boundaries & 2* cyclic, no slip \\
+               \hline \hline
+    \multirow{6}{*}{\rotatebox{90}{mesonh}} 
+               & Schemes & TKEL, REVE, PPM\\ 
+               & Mixing length & DEARDOFF \\
+               & Integrat° step & 0.04 s \\
+               & Integrat° length & 1500 s \\
+               & Advection & CEN4TH \\
+               & Temporal  & RK4 \\
+               & Relaxation & $\bar U$,$\bar V$,$\bar W$, $\bar \Theta$ \\
+               & $\tau^{relax} & 2000 s\\
+     \hline \hline
+    \multirow{3}{*}{\rotatebox{90}{profiles}} 
+               & $\theta_g$ & 291K\\
+               & sst  & $ 295 K$\\
+               \hline
+  \end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth} 
+  \centering
+  \includegraphics[width=1\textwidth]{input.png}
+\end{minipage}
+\end{frame}
+
+
+% --------------------------------------------
+% -- Evolution --
+% --------------------------------------------
+\begin{frame}
+Pour un rappel fort ($\tau = 20 s$): maintient du vent mais dvp de la couche limite quand même. $\zeta \approx 0.6$ \\
+\includegraphics[width=0.8\textwidth]{evol_strong_meanNUDGE.png}
+\end{frame}
+
+\begin{frame}
+Pour un rappel - fort ($\tau = 200 s$): relatif maintient du vent mais dvp de la couche limite quand même. $\zeta \approx 0.6$ \\
+\includegraphics[width=0.8\textwidth]{evol_weak_meanNUDGE.png}
+\end{frame}
+
+\begin{frame}
+Pour un rappel - fort ($\tau = 1000 s$): perte du max de vent, vent moyen augmente proche surface; $\zeta >0.6$ (+ proche de Lfahr)\\
+\includegraphics[width=0.8\textwidth]{evol_veryweak_meanNUDGE.png}
+\end{frame}
+
+\begin{frame}
+Mean and variance de U and W wind speeds. \\
+\begin{figure}
+  \begin{minipage}{0.31\textwidth}
+	\centering
+  \includegraphics[width=1\textwidth]{prof_veryweak_meanNUDGE.png}
+  \end{minipage}
+  \begin{minipage}{0.31\textwidth}
+  \includegraphics[width=1\textwidth]{prof_weak_meanNUDGE.png}
+  \end{minipage}
+  \begin{minipage}{0.31\textwidth}
+  \includegraphics[width=1\textwidth]{prof_strong_meanNUDGE.png}
+  \end{minipage}
+  \caption{$\tau=1000, 200, 20s$}
+\end{figure}
+\end{frame}
+
+
+% ------------------------------
+%             cuts
+% ------------------------------
+\begin{frame}
+Coupes horizontales : dvp de structure en rouleaux pour rappel plus faible, angle $\epsilon$ plus important aussi
+\begin{figure}
+\begin{minipage}{0.31\textwidth}
+	\centering
+    \includegraphics[width=1\textwidth]{horiz_veryweak.png}
+\end{minipage}
+\begin{minipage}{0.31\textwidth}
+	\centering
+    \includegraphics[width=1\textwidth]{horiz_weak.png}
+\end{minipage}
+\begin{minipage}{0.31\textwidth}
+	\centering
+    \includegraphics[width=1\textwidth]{horiz_strong.png}
+\end{minipage}
+  \caption{$\tau=1000, 200, 20s$}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{figure}
+  \begin{minipage}{0.2\textwidth}
+	\centering
+  \includegraphics[width=1\textwidth]{prof_veryveryweak_meanNUDGE.png}
+  \end{minipage}
+  \begin{minipage}{0.31\textwidth}
+  \includegraphics[width=1\textwidth]{cut_veryveryweak.png}
+  \end{minipage}
+  \begin{minipage}{0.31\textwidth}
+  \includegraphics[width=1\textwidth]{prof_strong_meanNUDGE.png}
+  \end{minipage}
+  \caption{$\tau=1000, 200, 20s$}
+\end{figure}
+\end{frame}
+% -------------------------------------------
+%   structure
+% ---------------------------------------------
+\begin{frame}
+Etude des structure à $t=30min$
+\includegraphics[width=1\textwidth]{autocorr_t30.png}
+\end{frame}
+
+\begin{frame}
+Moyenne temporelle sur $t = [20,30]$ min
+\includegraphics[width=1\textwidth]{rolls_ni_100_tmin20_tmax30.png}
+\includegraphics[width=1\textwidth]{rolls_level_10_tmin20_tmax30.png}
+\end{frame}
+
+\begin{frame}
+Moyenne temporelle sur $t = [27,30]$ min : tps plus court mais flux plus stationnaires
+\includegraphics[width=1\textwidth]{rolls_ni_100_tmin27_tmax30.png}
+\includegraphics[width=1\textwidth]{rolls_level_10_tmin27_tmax30.png}
+\end{frame}
+
+\begin{frame}
+Moyenne temporelle sur $t = 35min$ level 15, $\tau=2000s$.
+\includegraphics[width=1\textwidth]{corr_image.png}
+\includegraphics[width=1\textwidth]{corr.png}
+\end{frame}
+% -------------------------------------------
+%   Adrian
+% ---------------------------------------------
+
+\end{document}   
