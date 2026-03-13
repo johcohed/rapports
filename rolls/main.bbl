@@ -1,0 +1,562 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{brummerRollCellConvection1999}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7daa51a3a0441c79686e7b53e2eaf361}{%
+           family={Brümmer},
+           familyi={B\bibinitperiod},
+           given={Burghard},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7daa51a3a0441c79686e7b53e2eaf361}
+      \strng{fullhash}{7daa51a3a0441c79686e7b53e2eaf361}
+      \strng{bibnamehash}{7daa51a3a0441c79686e7b53e2eaf361}
+      \strng{authorbibnamehash}{7daa51a3a0441c79686e7b53e2eaf361}
+      \strng{authornamehash}{7daa51a3a0441c79686e7b53e2eaf361}
+      \strng{authorfullhash}{7daa51a3a0441c79686e7b53e2eaf361}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cold-air outbreaks from the polar ice caps or winterly continents over the open ocean lead to organized convection that typically starts as longitudinal roll patterns and changes to cellular patterns in downstream direction. During the field experiments ARKTIS 1991 and ARKTIS 1993, aircraft missions were conducted in 13 cold-air outbreak events over the Greenland and Barents Seas to determine the characteristic parameters of both the mean (primary) flow and the superimposed organized convection (secondary flow). The measurements are classified into four categories with respect to the convective pattern form: longitudinal rolls with small and wider horizontal wavelengths, transitional forms between rolls and cells, and cells.}
+      \field{issn}{0022-4928, 1520-0469}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{15}
+      \field{shortjournal}{J. Atmos. Sci.}
+      \field{title}{Roll and {{Cell Convection}} in {{Wintertime Arctic Cold-Air Outbreaks}}}
+      \field{urlday}{5}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{volume}{56}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2613\bibrangedash 2636}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1175/1520-0469(1999)056<2613:RACCIW>2.0.CO;2
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/2V7GXHSM/Brümmer - 1999 - Roll and Cell Convection in Wintertime Arctic Cold-Air Outbreaks.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.ametsoc.org/doi/10.1175/1520-0469(1999)056<2613:RACCIW>2.0.CO;2
+      \endverb
+      \verb{url}
+      \verb http://journals.ametsoc.org/doi/10.1175/1520-0469(1999)056%3C2613:RACCIW%3E2.0.CO;2
+      \endverb
+      \keyw{CAO}
+    \endentry
+    \entry{chlondThreedimensionalSimulationCloud1992}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8fab8c7f6564ab619ddf7056add59df2}{%
+           family={Chlond},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8fab8c7f6564ab619ddf7056add59df2}
+      \strng{fullhash}{8fab8c7f6564ab619ddf7056add59df2}
+      \strng{bibnamehash}{8fab8c7f6564ab619ddf7056add59df2}
+      \strng{authorbibnamehash}{8fab8c7f6564ab619ddf7056add59df2}
+      \strng{authornamehash}{8fab8c7f6564ab619ddf7056add59df2}
+      \strng{authorfullhash}{8fab8c7f6564ab619ddf7056add59df2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A three-dimensional numerical model is used to study boundary-layer eddy structure during a cold air outbreak. The model explicitly represents the large-scale three-dimensional motions, while small-scale turbulence is parameterized; it contains a water cycle with cloud formation and it takes into account infrared radiative cooling in cloudy conditions and the influence of large-scale vertical motions.}
+      \field{issn}{0006-8314, 1573-1472}
+      \field{journaltitle}{Boundary-Layer Meteorology}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1--2}
+      \field{shortjournal}{Boundary-Layer Meteorol}
+      \field{title}{Three-Dimensional Simulation of Cloud Street Development during a Cold Air Outbreak}
+      \field{urlday}{27}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{volume}{58}
+      \field{year}{1992}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{161\bibrangedash 200}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1007/BF00120757
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/8KFSCZF4/Chlond - 1992 - Three-dimensional simulation of cloud street development during a cold air outbreak.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF00120757
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF00120757
+      \endverb
+    \endentry
+    \entry{etlingRollVorticesPlanetary1993}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a1dff021a12d73c774a8d624d18e161b}{%
+           family={Etling},
+           familyi={E\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3afb6366030ee43d930c95c25471130}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9b483bf6de30fef2dd093483c0b8100b}
+      \strng{fullhash}{9b483bf6de30fef2dd093483c0b8100b}
+      \strng{bibnamehash}{9b483bf6de30fef2dd093483c0b8100b}
+      \strng{authorbibnamehash}{9b483bf6de30fef2dd093483c0b8100b}
+      \strng{authornamehash}{9b483bf6de30fef2dd093483c0b8100b}
+      \strng{authorfullhash}{9b483bf6de30fef2dd093483c0b8100b}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0006-8314, 1573-1472}
+      \field{journaltitle}{Boundary-Layer Meteorology}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{3}
+      \field{shortjournal}{Boundary-Layer Meteorol}
+      \field{shorttitle}{Roll Vortices in the Planetary Boundary Layer}
+      \field{title}{Roll Vortices in the Planetary Boundary Layer: {{A}} Review}
+      \field{urlday}{23}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{65}
+      \field{year}{1993}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{215\bibrangedash 248}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1007/BF00705527
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/XUT2LXGE/Etling et Brown - 1993 - Roll vortices in the planetary boundary layer A review.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF00705527
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF00705527
+      \endverb
+      \keyw{A LIRE}
+    \endentry
+    \entry{foster2005}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=93838410056dc07014d9d5606efc8847}{%
+           family={Foster},
+           familyi={F\bibinitperiod},
+           given={Ralph\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{93838410056dc07014d9d5606efc8847}
+      \strng{fullhash}{93838410056dc07014d9d5606efc8847}
+      \strng{bibnamehash}{93838410056dc07014d9d5606efc8847}
+      \strng{authorbibnamehash}{93838410056dc07014d9d5606efc8847}
+      \strng{authornamehash}{93838410056dc07014d9d5606efc8847}
+      \strng{authorfullhash}{93838410056dc07014d9d5606efc8847}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent remote sensing observations show that the hurricane boundary layer flow, although energetic, is not a region of homogeneous turbulence. In fact, the observations convincingly demonstrate that a large fraction of the turbulent flow in the regions away from the deep convective rainbands is highly organized into intense horizontal roll vortices that are approximately aligned with the mean wind and span the depth of the boundary layer. These observations show that rolls strongly increase the flux of momentum between the underlying surface and the main body of the storm compared to an equivalent hurricane boundary layer flow without rolls. The linear and nonlinear dynamics of hurricane boundary layer roll formation are outlined and it is shown why rolls are, in fact, the expected basic hurricane boundary layer state. The model presented here explains the hurricane roll features currently documented in field programs and makes predictions that can be tested in future experiments. The primary effects of rolls on the boundary layer fluxes are inherently nonlocal and nongradient and hence cannot be captured by standard downgradient turbulence parameterizations used in hurricane simulations. However, the nonlinear theory is the proper starting point for developing boundary layer parameterizations that include roll modification of the turbulent fluxes.}
+      \field{day}{1}
+      \field{issn}{1520-0469, 0022-4928}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Why {{Rolls}} Are {{Prevalent}} in the {{Hurricane Boundary Layer}}}
+      \field{urlday}{1}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{volume}{62}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2647\bibrangedash 2661}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1175/JAS3475.1
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/ZCF4KDZI/Foster - 2005 - Why Rolls are Prevalent in the Hurricane Boundary Layer.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.ametsoc.org/doi/10.1175/JAS3475.1
+      \endverb
+      \verb{url}
+      \verb https://journals.ametsoc.org/doi/10.1175/JAS3475.1
+      \endverb
+      \keyw{A LIRE,stability}
+    \endentry
+    \entry{gryschkaImpactForcedRoll2014}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=80552fef12cca7da6ce02a512bea124d}{%
+           family={Gryschka},
+           familyi={G\bibinitperiod},
+           given={Micha},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe4639ade8a80a241746b11ba5f63534}{%
+           family={Fricke},
+           familyi={F\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c487e81ffbab0e773b85eb163573b1b}{%
+           family={Raasch},
+           familyi={R\bibinitperiod},
+           given={Siegfried},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bb90aeca7bf8ac9e4b07c6fb8c897ce5}
+      \strng{fullhash}{bb90aeca7bf8ac9e4b07c6fb8c897ce5}
+      \strng{bibnamehash}{bb90aeca7bf8ac9e4b07c6fb8c897ce5}
+      \strng{authorbibnamehash}{bb90aeca7bf8ac9e4b07c6fb8c897ce5}
+      \strng{authornamehash}{bb90aeca7bf8ac9e4b07c6fb8c897ce5}
+      \strng{authorfullhash}{bb90aeca7bf8ac9e4b07c6fb8c897ce5}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We investigated the impact of roll convection on the convective boundary layer and vertical transports in different cold air outbreak (CAO) scenarios using large eddy simulations (LES). The organization of convection into rolls was triggered by upstream heterogeneities in the surface temperature, representing ice and water. By changing the sea ice distribution in our LES, we were able to simulate a roll and a nonroll case for each scenario. Furthermore, the roll wavelength was varied by changing the scale of the heterogeneity. The characteristics of the simulated rolls and cloud streets, such as aspect ratios, orientation of the roll axes, and downstream extensions of single rolls agreed closely with observations in CAO situations. The vertical turbulent fluxes, calculated for each simulation, were decomposed into contributions from rolls and from unorganized turbulence. Even though our results confirmed that rolls triggered by upstream heterogeneities can substantially contribute to vertical turbulent fluxes, the total fluxes were not affected by the rolls.}
+      \field{day}{27}
+      \field{issn}{2169-897X, 2169-8996}
+      \field{journaltitle}{Journal of Geophysical Research: Atmospheres}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{22}
+      \field{shortjournal}{JGR Atmospheres}
+      \field{title}{On the Impact of Forced Roll Convection on Vertical Turbulent Transport in Cold Air Outbreaks}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{volume}{119}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1002/2014JD022160
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/A4JKHJYQ/Gryschka et al. - 2014 - On the impact of forced roll convection on vertical turbulent transport in cold air outbreaks.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2014JD022160
+      \endverb
+      \verb{url}
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2014JD022160
+      \endverb
+      \keyw{A LIRE,CAO}
+    \endentry
+    \entry{lfarhImpactSurfaceTurbulent2024}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e68406f2a7e38dcdc404773139b5d446}{%
+           family={Lfarh},
+           familyi={L\bibinitperiod},
+           given={Wahiba},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=19cc3dcf3bc2dfc63a348b693a46c805}{%
+           family={Pantillon},
+           familyi={P\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=348e56f320c7f063bc2f88a60c86a777}{%
+           family={Chaboureau},
+           familyi={C\bibinitperiod},
+           given={Jean‐Pierre},
+           giveni={J\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=581d21b32ef10bdf12ffb79447464374}{%
+           family={Brumer},
+           familyi={B\bibinitperiod},
+           given={Sophia\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d97038fe3a6ef15253ff4f5ff902121b}
+      \strng{fullhash}{fbefc69e8dda919918bc1e2fda5ed4a8}
+      \strng{bibnamehash}{d97038fe3a6ef15253ff4f5ff902121b}
+      \strng{authorbibnamehash}{d97038fe3a6ef15253ff4f5ff902121b}
+      \strng{authornamehash}{d97038fe3a6ef15253ff4f5ff902121b}
+      \strng{authorfullhash}{fbefc69e8dda919918bc1e2fda5ed4a8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Roll vortices can have a significant influence on the exchanges of momentum, sensible heat and moisture throughout the boundary layer. They have been shown to reinforce air‐sea interactions under strong wind conditions. This raises the question of how air‐sea exchanges can, in turn, affect the roll vortices. However, representing surface turbulent fluxes during extreme wind conditions is a major challenge in numerical weather prediction and can lead to large uncertainties in surface wind speed. The sensitivity of rolls to different representations of surface fluxes is investigated using large eddy simulations. The study focuses on Mediterranean windstorm Adrian, where rolls are responsible for the transport of strong winds to the surface. Considering the effects of sea spray increases surface heat fluxes and significantly influences the roll morphology. The rolls become narrower and extend over a greater height, while the downward transport of momentum is intensified and results in higher wind speed near the surface. Roll vortices vanish within a few minutes in the absence of momentum fluxes, which maintain the wind shear necessary for their organization. They also quickly weaken without sensible heat fluxes, which sustain the near‐neutral stratification required for their development. In contrast, latent heat fluxes play a minor role. These findings emphasize the necessity of precisely representing the processes occurring at the air‐sea interface, which do not only affect the thermodynamic surface conditions but also the vertical transport of momentum within the windstorm.}
+      \field{day}{28}
+      \field{issn}{2169-897X, 2169-8996}
+      \field{journaltitle}{Journal of Geophysical Research: Atmospheres}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{22}
+      \field{shortjournal}{JGR Atmospheres}
+      \field{title}{Impact of {{Surface Turbulent Fluxes}} on the {{Formation}} of {{Roll Vortices}} in a {{Mediterranean Windstorm}}}
+      \field{urlday}{4}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{129}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e2023JD040191}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1029/2023JD040191
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/QZSZEZ9J/Lfarh et al. - 2024 - Impact of Surface Turbulent Fluxes on the Formation of Roll Vortices in a Mediterranean Windstorm.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023JD040191
+      \endverb
+      \verb{url}
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023JD040191
+      \endverb
+    \endentry
+    \entry{liuAnalyticalModelRoll2009}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=532ca3cfbebbe8fb531796f116d18df3}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Huizhi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e6da02fb75ac36e036a31a13b3af4b28}{%
+           family={Sang},
+           familyi={S\bibinitperiod},
+           given={Jianguo},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8567f9e8a55db820c62cb742529a9a84}
+      \strng{fullhash}{8567f9e8a55db820c62cb742529a9a84}
+      \strng{bibnamehash}{8567f9e8a55db820c62cb742529a9a84}
+      \strng{authorbibnamehash}{8567f9e8a55db820c62cb742529a9a84}
+      \strng{authornamehash}{8567f9e8a55db820c62cb742529a9a84}
+      \strng{authorfullhash}{8567f9e8a55db820c62cb742529a9a84}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Analytical solutions of convective waves in the convective boundary layer (CBL) were obtained with two-layer linearized atmospheric equations including Rayleigh friction, which represents the turbulent viscosity in the lower CBL. The analytical model shows that the interaction between the convection in the lower layer and gravity waves in the upper layer is one of the causes for the formation of convective bands. The flow and temperature fields obtained by the analytical model present the main characteristics of convective bands found in field observations. We have also investigated the influences of atmospheric conditions on the characteristics of the bands. Results accord with previous knowledge about these phenomena.}
+      \field{issn}{0006-8314, 1573-1472}
+      \field{journaltitle}{Boundary-Layer Meteorology}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Boundary-Layer Meteorol}
+      \field{title}{Analytical {{Model}} of {{Roll Vortices}} in the {{Convective Boundary Layer}}}
+      \field{urlday}{22}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{130}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{43\bibrangedash 55}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/s10546-008-9335-5
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/35SW6WS7/Liu et Sang - 2009 - Analytical Model of Roll Vortices in the Convective Boundary Layer.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s10546-008-9335-5
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s10546-008-9335-5
+      \endverb
+      \keyw{stability}
+    \endentry
+    \entry{riviereDownwardTransportMomentum2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=eff8ea5e14e12d1b9364848776ff1526}{%
+           family={Rivière},
+           familyi={R\bibinitperiod},
+           given={Gwendal},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81d69d0cebd1789eb033336442e35058}{%
+           family={Ricard},
+           familyi={R\bibinitperiod},
+           given={Didier},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7591cdb83ebc5d746a5dd9da8f937726}{%
+           family={Arbogast},
+           familyi={A\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{87af0de069884886bbb5c486bd48c113}
+      \strng{fullhash}{87af0de069884886bbb5c486bd48c113}
+      \strng{bibnamehash}{87af0de069884886bbb5c486bd48c113}
+      \strng{authorbibnamehash}{87af0de069884886bbb5c486bd48c113}
+      \strng{authornamehash}{87af0de069884886bbb5c486bd48c113}
+      \strng{authorfullhash}{87af0de069884886bbb5c486bd48c113}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Processes leading to the formation of strong surface wind gusts within an idealized sting-jet extratropical cyclone are investigated using a high-resolution mesoscale model. It is motivated by real case studies that have shown that damaging surface winds ahead of the bent-back warm front of an extratropical cyclone are often due to the presence of a sting jet, which is a low-level mesoscale jet, the air masses of which descend from the cloud head to the top of the boundary layer. Different numerical simulations show that surface winds below the leading edge of the sting jet increase with increased horizontal resolution and surface roughness. For typical land-surface roughness, the intensity of near-surface wind gusts increases rapidly with horizontal resolution, while the sting-jet intensity above the boundary layer does not vary with resolution. A focus on the 1-km grid-spacing simulation with land-surface roughness is then made. It shows stronger surface winds ahead of the bent-back warm front than near the cold conveyor-belt jet. It also exhibits multiple bands of strong surface wind speed, similar to real sting-jet cyclones. These multiple bands are closely linked with multiple resolved convective rolls in the boundary layer, the descending branches of which are responsible for the downward transfer of momentum. Sensitivity experiments and a stability analysis show that cooling due to sublimation and melting of precipitating ice hydrometeors below the leading edge of the sting jet triggers and invigorates boundary-layer convective rolls by reducing the buoyancy of air masses near the precipitation base and below. Closer to the surface, the transfer of momentum is predominantly taken over by subgrid-scale turbulent fluxes.}
+      \field{issn}{0035-9009, 1477-870X}
+      \field{journaltitle}{Quarterly Journal of the Royal Meteorological Society}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{729}
+      \field{shortjournal}{Quart J Royal Meteoro Soc}
+      \field{title}{The Downward Transport of Momentum to the Surface in Idealized Sting‐jet Cyclones}
+      \field{urlday}{13}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{volume}{146}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1801\bibrangedash 1821}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1002/qj.3767
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/CKEQ4B4S/Rivière et al. - 2020 - The downward transport of momentum to the surface in idealized sting‐jet cyclones.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3767
+      \endverb
+      \verb{url}
+      \verb https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3767
+      \endverb
+      \keyw{stingjet}
+    \endentry
+    \entry{youngSupplementRollsStreets2002}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=87c3955c3918b4410a0bbc7062cc62b7}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={George\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cdf14aafaca4cd179ba14bd2ddae707b}{%
+           family={Kristovich},
+           familyi={K\bibinitperiod},
+           given={David\bibnamedelimb A.\bibnamedelimi R.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5eb99f6251a003e773fb1210f0d8abdd}{%
+           family={Hjelmfelt},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93838410056dc07014d9d5606efc8847}{%
+           family={Foster},
+           familyi={F\bibinitperiod},
+           given={Ralph\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dd96a7182b30ffb99f5aa35b4ab77c33}
+      \strng{fullhash}{74c0a389f68cf1ddce21efb38028f6bc}
+      \strng{bibnamehash}{dd96a7182b30ffb99f5aa35b4ab77c33}
+      \strng{authorbibnamehash}{dd96a7182b30ffb99f5aa35b4ab77c33}
+      \strng{authornamehash}{dd96a7182b30ffb99f5aa35b4ab77c33}
+      \strng{authorfullhash}{74c0a389f68cf1ddce21efb38028f6bc}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0003-0007, 1520-0477}
+      \field{journaltitle}{Bulletin of the American Meteorological Society}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{7}
+      \field{shortjournal}{Bull. Amer. Meteor. Soc.}
+      \field{title}{Supplement to {{Rolls}}, {{Streets}}, {{Waves}}, and {{More}}}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{volume}{83}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1001\bibrangedash 1001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1175/BAMS-83-7-Young
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/5SUJS6IV/Young et al. - 2002 - Supplement to Rolls, Streets, Waves, and More.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.ametsoc.org/doi/10.1175/BAMS-83-7-Young
+      \endverb
+      \verb{url}
+      \verb http://journals.ametsoc.org/doi/10.1175/BAMS-83-7-Young
+      \endverb
+      \keyw{A LIRE}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

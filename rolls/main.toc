@@ -1,0 +1,32 @@
+\contentsline {chapter}{\numberline {1}Généralités/Contexte}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Caractéristiques générales des rouleaux de couche limite}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Situation d'observations de rouleaux}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Cyclones extra-tropicaux}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Hurricanes}{3}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Cold Air Outbreak}{3}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Monsoon}{4}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Hétérogéniité de flux de surface}{4}{subsection.1.2.5}%
+\contentsline {section}{\numberline {1.3}Introduction aux processus physiques des rouleaux}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Différents types d'instabilités: }{4}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Paramètre $\zeta $ ou nombre de Richardson}{4}{subsection.1.3.2}%
+\contentsline {paragraph}{Nombre de Richardson $Ri$}{4}{section*.5}%
+\contentsline {paragraph}{Paramètre de stabilité statique $N_v^2$}{4}{section*.6}%
+\contentsline {paragraph}{Longueur de Monin-Obukhov $L$}{5}{section*.7}%
+\contentsline {paragraph}{Paramètre $\zeta $}{5}{section*.8}%
+\contentsline {section}{\numberline {1.4}Distinction type de rouleaux }{5}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Problématiques/Questions de recherche}{6}{section.1.5}%
+\contentsline {paragraph}{Distinguer un rouleau}{6}{section*.10}%
+\contentsline {paragraph}{Paramètre de stratification}{6}{section*.11}%
+\contentsline {chapter}{\numberline {2}Mise en équation}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}La couche limite}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Rayleigh-Bénard convection}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Mise en équation du problème}{8}{subsection.2.2.1}%
+\contentsline {paragraph}{Incompressibilité}{8}{section*.14}%
+\contentsline {paragraph}{Quantité de mouvement}{8}{section*.15}%
+\contentsline {paragraph}{Equation de la chaleur}{8}{section*.16}%
+\contentsline {subsection}{\numberline {2.2.2}Stabilité}{8}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Etude de stabilité}{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Obtention des EDO d'un système dynamique}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Cas de la convection de Rayleigh-Bénard}{9}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Turbulence}{10}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Longueur de mélange}{10}{subsection.2.4.1}%
