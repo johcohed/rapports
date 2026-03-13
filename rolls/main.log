@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.1)  11 MAR 2026 15:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.1)  13 MAR 2026 11:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1045,46 +1045,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-<FIGURES/Brummer_graph1.png, id=149, 957.5775pt x 537.50812pt>
+<FIGURES/Brummer_graph1.png, id=150, 957.5775pt x 537.50812pt>
 File: FIGURES/Brummer_graph1.png Graphic file (type png)
 <use FIGURES/Brummer_graph1.png>
-Package pdftex.def Info: FIGURES/Brummer_graph1.png  used on input line 52.
+Package pdftex.def Info: FIGURES/Brummer_graph1.png  used on input line 57.
 (pdftex.def)             Requested size: 318.66946pt x 178.87093pt.
-[3{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./FIGURES/Brumm
-er_graph1.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 99.
+(hyperref)                removing `math shift' on input line 104.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\zeta' on input line 99.
+(hyperref)                removing `\zeta' on input line 104.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 99.
+(hyperref)                removing `math shift' on input line 104.
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 118--125
+[4 <./FIGURES/Brummer_graph1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 123--130
 
  []
 
-<FIGURES/Young2002.png, id=183, 828.09375pt x 652.4375pt>
+<FIGURES/Young2002.png, id=185, 828.09375pt x 652.4375pt>
 File: FIGURES/Young2002.png Graphic file (type png)
 <use FIGURES/Young2002.png>
-Package pdftex.def Info: FIGURES/Young2002.png  used on input line 130.
+Package pdftex.def Info: FIGURES/Young2002.png  used on input line 135.
 (pdftex.def)             Requested size: 318.66946pt x 251.07472pt.
 [5 <./FIGURES/Young2002.png>]) [6]
 \openout2 = `stabilité.aux'.
 
  (./stabilité.tex
 Chapter 2.
-<FIGURES/PBL.png, id=204, 980.91469pt x 523.20468pt>
+<FIGURES/PBL.png, id=206, 980.91469pt x 523.20468pt>
 File: FIGURES/PBL.png Graphic file (type png)
 <use FIGURES/PBL.png>
 Package pdftex.def Info: FIGURES/PBL.png  used on input line 7.
 (pdftex.def)             Requested size: 318.66946pt x 169.96765pt.
-<../../../../RB.png, id=205, 195.73125pt x 119.69719pt>
+<../../../../RB.png, id=207, 195.73125pt x 119.69719pt>
 File: ../../../../RB.png Graphic file (type png)
 <use ../../../../RB.png>
 Package pdftex.def Info: ../../../../RB.png  used on input line 18.
@@ -1128,10 +1133,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28509 strings out of 474222
- 526930 string characters out of 5748734
- 1939975 words of memory out of 5000000
- 50273 multiletter control sequences out of 15000+600000
+ 28520 strings out of 474222
+ 527325 string characters out of 5748734
+ 1941975 words of memory out of 5000000
+ 50283 multiletter control sequences out of 15000+600000
  565828 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,9n,96p,1881b,1385s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1150,10 +1155,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texm
 f/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (11 pages, 948668 bytes).
+Output written on main.pdf (11 pages, 949311 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 301 compressed objects within 4 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 367 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

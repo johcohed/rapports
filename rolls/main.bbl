@@ -178,7 +178,7 @@
       \verb{url}
       \verb http://link.springer.com/10.1007/BF00705527
       \endverb
-      \keyw{A LIRE}
+      \keyw{A LIRE,review}
     \endentry
     \entry{foster2005}{article}{}
       \name{author}{1}{}{%
@@ -230,7 +230,7 @@
       \verb{url}
       \verb https://journals.ametsoc.org/doi/10.1175/JAS3475.1
       \endverb
-      \keyw{A LIRE,stability}
+      \keyw{A LIRE,review,stability}
     \endentry
     \entry{gryschkaImpactForcedRoll2014}{article}{}
       \name{author}{3}{}{%
@@ -423,6 +423,64 @@
       \endverb
       \keyw{stability}
     \endentry
+    \entry{nakanishiLargeEddySimulationRoll2012}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3b7c15e77a4c59bd7a6d7cca98f13146}{%
+           family={Nakanishi},
+           familyi={N\bibinitperiod},
+           given={Mikio},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34614661fb7990310e91220e1d4d81f1}{%
+           family={Niino},
+           familyi={N\bibinitperiod},
+           given={Hiroshi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{30dd3b54640285af981cba784be41351}
+      \strng{fullhash}{30dd3b54640285af981cba784be41351}
+      \strng{bibnamehash}{30dd3b54640285af981cba784be41351}
+      \strng{authorbibnamehash}{30dd3b54640285af981cba784be41351}
+      \strng{authornamehash}{30dd3b54640285af981cba784be41351}
+      \strng{authorfullhash}{30dd3b54640285af981cba784be41351}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{For the last decade, horizontal roll vortices have been often observed in hurricane boundary layers (HBLs). In this study, a large-eddy simulation is performed to explore the formation mechanism of the horizontal roll vortices and their significance in a near-neutrally stratified HBL at 40 km (R40) and 100 km (R100) from the center of the hurricane. Results are examined through turbulence statistics and empirical orthogonal function (EOF) analysis. The EOF analysis and budgets of turbulent kinetic energy demonstrate that an inflectionpoint instability in the radial velocity profile is responsible for the roll vortices with horizontal wavelengths of 1.5–2.4 km in the HBL both for R40 and R100. The roll vortices for R40 are nearly aligned with the gradient wind, while those for R100 are oriented slightly to the left of that wind. Also the horizontal distributions of velocity fluctuations suggest the presence of streaklike structures at horizontal intervals of several hundred meters near the ground surface. Internal gravity waves, Kelvin–Helmholtz waves, and entrainments occur above the HBL and are partly coupled with the roll vortices in the HBL, implying an enhancement of vertical transports of momentum and other quantities between the HBL and the free atmosphere.}
+      \field{day}{1}
+      \field{issn}{0022-4928, 1520-0469}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Large-{{Eddy Simulation}} of {{Roll Vortices}} in a {{Hurricane Boundary Layer}}}
+      \field{urlday}{13}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{69}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{3558\bibrangedash 3575}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1175/JAS-D-11-0237.1
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/I4FZKX4H/Nakanishi et Niino - 2012 - Large-Eddy Simulation of Roll Vortices in a Hurricane Boundary Layer.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.ametsoc.org/doi/10.1175/JAS-D-11-0237.1
+      \endverb
+      \verb{url}
+      \verb https://journals.ametsoc.org/doi/10.1175/JAS-D-11-0237.1
+      \endverb
+      \keyw{hurricane,ideal}
+    \endentry
     \entry{riviereDownwardTransportMomentum2020}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=eff8ea5e14e12d1b9364848776ff1526}{%
@@ -485,7 +543,7 @@
       \verb{url}
       \verb https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3767
       \endverb
-      \keyw{stingjet}
+      \keyw{evaporation,ideal,modelling,stingjet}
     \endentry
     \entry{youngSupplementRollsStreets2002}{article}{}
       \name{author}{4}{}{%
@@ -554,7 +612,7 @@
       \verb{url}
       \verb http://journals.ametsoc.org/doi/10.1175/BAMS-83-7-Young
       \endverb
-      \keyw{A LIRE}
+      \keyw{A LIRE,review}
     \endentry
   \enddatalist
 \endrefsection
