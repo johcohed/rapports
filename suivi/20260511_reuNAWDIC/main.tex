@@ -1,0 +1,99 @@
+\input{../beamer_settings.tex}
+\addbibresource{../../groupeThese.bib}
+\graphicspath{{FIGURES/}}
+
+\usepackage{animate}
+\usepackage{graphicx}
+\usepackage{multimedia}
+
+%Title Page
+\title{Discussion vol F10}
+\author{Johan Hedman, Jean-Pierre Chaboureau}
+
+\usepackage[caption = false]{subfig}
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Question scientifique d’intérêt dans ma thèse}
+	\vfill
+	\begin{itemize}
+	\item \textbf{Comprendre les processus} qui mène à la formation de rouleaux \\
+	Quelles instabilités ? \\
+		\vfill
+	\item Rôle dans le \textbf{transport de quantité de mouvemen}t, humidité et chaleur ?  \\
+	TODO completer (rivière et al? lfarh et al?)
+		\vfill
+	\item Vents forts  \& \textbf{flux de surfaces} : Investiguer les liens entre les flux de surface et la géométrie des rouleaux (\cite{lfarhImpactSurfaceTurbulent2024})
+\end{itemize}
+	\vfill
+\end{frame}
+
+\begin{frame}{Situation du vol 10}
+	Vol sur le front chaud, dans le courant jet.  \\
+	\begin{minipage}{0.6\textwidth}
+	\begin{figure}
+		\centering
+		\includegraphics[width=1\linewidth]{AERIS.png}
+		\caption{Vent@925hPa, nuages moyens (visuel d'AERIS, \hl{TODO}jsp qui et Jeremy Tulles)}
+		\label{fig:aeris1630}
+	\end{figure}
+	
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.35\textwidth}
+		\begin{figure}
+		\movie[width=0.655\textwidth, height=\textwidth, autostart, loop]{}{movie.mp4}
+		\caption{Simu MesoNH à 4 km de résolution (JP Chaboureau)}
+		\label{fig:aeris1630}
+		\end{figure}	
+	%	\movie[width=\linewidth, autostart]{}{movie.mp4}
+		%\includegraphics[width=\linewidth]{frames/frame-6.png}
+
+	\end{minipage}
+	
+	
+
+\end{frame}
+
+\begin{frame}{Pourquoi ce vol ?}
+	\begin{minipage}{0.35\textwidth}
+		\begin{itemize}
+			\vspace{1cm}
+			\item Passage S1 à 18/30 UTC
+			\vspace{1.5cm}
+			\item Observation de structure dans les vitesses verticales du RASTA
+			\vspace{0.5cm}
+			\item 15:30 UTC : HALO et EARTHCare
+			
+		\end{itemize}
+	\end{minipage} \hfill
+	\begin{minipage}{0.55\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{sar.png}
+		SAR data de S1-A, passage à 18:32UTC
+		\includegraphics[width=\linewidth]{zoomRASTA.png}
+		Quicklook Vz du RASTA (Julien Delanoë)
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{En quoi l'étude de ce vol participe au questionnement ?}
+	\vfill
+\begin{itemize}
+	\item Reproduire les rouleaux dans la LES, \textbf{comparaison avec signature SAR }\\
+	Travail de N. Maury sur Alex: comparaison de ces deux cas.
+	\vfill
+	
+	\item Rapport avec les flux ? Pas de mesure ? 
+	\vfill
+	
+	\item Etudier les structures des legs 5 et 6. Avion dans la couche limite 
+\end{itemize}
+\vfill
+	
+	
+	
+\end{frame}
+
+\end{document}   
