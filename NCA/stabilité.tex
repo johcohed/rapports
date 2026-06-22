@@ -1,0 +1,33 @@
+\section{Analyse de stabilité}
+\paragraph{Interêt d'une étude de stabilité} Etude de l'effet d'une perturbation sur un état de base. Connaitres les états et les bifurcations possibles. Le souci c'est la complexité du système dynamique étudié. \\
+
+\subsection{Obtention des EDO d'un système dynamique}
+Étude mené sur des système dynamiques = EDO
+ \begin{equation}
+ 	\label{eq:EDOdyn}
+ 	\dot X = F(X, r, t) 
+ \end{equation}
+ mais les équations physiques, notamment de la dynamique, sous formes d'EDP 
+ \begin{equation}
+ 	\label{eq:EDPphys}
+ 	\frac{\partial V}{\partial t} = \mathcal L(V) + \mathcal{N} (V)
+\end{equation}
+ où $\mathcal L$ est un opérateur linéaire. On fait des études autour d'une situation de base connue. $\mathcal{L}$ fait apparaitre les cohérence spatiales, retroactions linéaires dans ses modes propres. \\
+ On cherche des solutions à variables séparées et si $\mathcal{L}$ peut etre auto-adjoint c'est chouette :) \\
+ Le problème apres c'est plus de traiter $\mathcal{N}$ mais avec dvp de Taylor on peut se ramener à une équatio nde la dynamique. \\
+ \textbf{Objectif ? } Est ce que ça peut etre un objectif de mettre le problème sous forme de problème dynamique? \\
+
+\subsection{Cas de la convection de Rayleigh-Bénard}
+On s'intéresse au cas de Rayleigh-Bénard avec aucune dépendance en $y$, donc que $\partial_y = 0$ et $v=0$. 
+fluide incompressible (expliquer pk?)\\
+Système étudié décrit par les équations de Boussinesq : 
+\begin{equation}
+ 	\begin{cases}
+ 		\underline \nabla \cdot \underline u = 0 \\
+ 		\left(\partial_t  + (\underline u \cdot \underline \nabla) \right) \underline u = \nu \underline \nabla ^2 \underline u - \frac{1}{\rho_0} \nabla p + \rho g \\
+ 		\left(\partial_t  + (\underline u \cdot \underline \nabla) \right) \theta = \kappa \underline \nabla ^2 \theta + N^2 w   \\
+ 	\end{cases}
+ \end{equation}
+Ce pb est étudié pour Rayleigh-Bénard = instabilité de convection. On trouve un point de bifurcation $\propto \Delta t$, cas pour les rouleaux plus compliqué car instabilité de vent/ cisaillement ? étude par \cite{liu_analytical_2009}.
+% Study of stability of the Rayligh Benard convection => Rayleigh number to decide when the convection begins. Rolls is basicely the same but with wind ? so mabe try to do the same 
+% Study of unstabilities that lead to rolls= expected basic state of hurricane BL (\cite{foster_why_2005}. )

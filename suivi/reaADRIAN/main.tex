@@ -1,0 +1,264 @@
+\input{settings.tex}
+\usepackage[style=authoryear, backend=biber]{biblatex}
+\addbibresource{groupeThese.bib}
+\graphicspath{{FIGURES/}}
+
+\begin{document}
+
+\title{Simulations idéalisées dans le contexte de la tempête ADRIAN}
+\date{\today}
+
+\maketitle
+\tableofcontents
+
+\newpage
+\section{Présentation du cadre de l'expérience}
+L'objectif ici est à partir de profils de vents et de température tiré du papier de Lfahr et al de retrouver des structures organisées de couche limite.
+
+\begin{figure}[h!]
+\begin{minipage}{0.5\textwidth}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multirow{4}{*}{\rotatebox{90}{Prep ideal}} 
+		& Domain size & \hl{25 x 25} x 1.6 km \\
+		& discretization & \hl{$dx = dy = 1000 - 100- 50- 25m$}\\
+		&  & $ 10m \leq dz \leq 20m$ \\
+		& Boundaries & 2* cyclic, no slip \\
+		\hline \hline
+		\multirow{6}{*}{\rotatebox{90}{mesonh}} 
+		& Schemes & TKEL, REVE, \hl {PPM}\\ 
+		& Mixing length & DEARDOFF \\
+		& Integrat° step & varie avec $dx$ s \\
+		& Integrat° length & 1700 s \\
+		& Advection & CEN4TH \\
+		& Temporal  & RK4 \\
+		& Relaxation & $\bar U$, $\bar \Theta$ \\
+		& $\tau^{relax}$ & \hl{2000 s}\\
+		\hline \hline
+		\multirow{3}{*}{\rotatebox{90}{profiles}} 
+		& $\theta_g$ & 291K\\
+		& sst  & $ 295 K$\\
+		\hline
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth} 
+	\centering
+	\includegraphics[width=1\textwidth]{input.png}
+\end{minipage}
+	\caption{Paramètres d'entrés avec profils verticaux tirés du papier de Lfahr et al, 2024, rn surligné ce qui va être varié}
+\label{fig:init}
+\end{figure}
+
+\section{Sensibilité à la résolution}
+4 simulations avec variation des dimensions du maillages avec une taille de 1000m, 100m, 50m et 25m. \\cd 
+Pour la résolution de 1000m on utilise la longueur de mélange de Bougeault Lacarère BL89 autrement avec DEAR pas de dvp de couche limite. 
+
+\subsection{Développement de la couche limite}
+Malgré un rappel du vent moyen vers le vent de large échelle on a un développement de la couche limite. La résolution de la simulation a un large impact sur cette croissance. Des résolutions plus faible, semblent permettre une croissance plus précoce mais aboutit à une couche limite moins développé que pour des résolutions plus grande. A l'inverse une résolution bien trop grande manque ce développement de couche limite. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\textwidth]{evol}
+\end{figure}
+Il y a une simulation avec une résolution de 1000m sans schéma sous maille de convection plus profonde et une utilisant le schéma EDKF. Il y a sûrement du travail pour régler ce schéma dans ma simulation, mais il semble que l'activation du mixage de la quantité de mvt mènent à des résultats différents. \\
+Les vents forts en surface sont maximales juste après le dvp de la couche limite. Plus élévé pour des résolutions plus grandes. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\textwidth]{RESOL/Profil_EVolutions.png}
+	\label{fig:evol_prof_resol}
+	\caption{Evolution temporelle des profils verticaux de vent, température, rapport de mélange et énergie cinétique moyennées par niveau}
+\end{figure}
+
+Evolution de variables moyennées. \hl{QUESTION SUR rapport de mélange pour la résolution de 1000m, pareil avec edkf???}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Spectre_sveral_resol}
+\end{figure}
+
+Sur es spectre d'énegrie on voit cascade inertiel ok! resol 25m et 50m résoulvent bien la turbulence. pic autour de 1000m = rouleaux ?
+
+
+\subsection{Est ce que c'est un dvp de couche limite ou un spin up ??}
+je fais mes simus avec perturbations bruit blanc en vitesse de vent. Installation lente de la turbulence (\hl{TODO Faudrait tout refaire a terme avec code de Axelle: peut etre pas}). \\
+Deux simulations sont faites avec une résolution $dx =  50m$, un rappel $\tau = 2000s$. Les deux simulations ont une perturbation bruit blanc en vent sur les 50 premier niveaux (ie sur les 939m). Les amplitudes des perturbations varient elles sont fixés à $A = 1 m.s^{-1}$ et $A = 2 m.s^{-1}$ . \\
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\textwidth]{PERT/evol.png}
+\end{figure}
+
+On observe convergence vers meme solution de BLH mais dvp de couche limite différentes pour deux perturbations. Indice que la variation est dû à un spin up du modèle. Confirmation avec figure \ref{fig:spectr evol} : la casca de d'énergie est résolue que pour t=20min + spectre d'énergie indépendant de la perturbation. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{PERT/spectr_z=149_tevol.png}
+	\caption{Spectre de densité d'énergie turbulente à différents instants}
+	\label{fig:spectr evol}
+\end{figure}
+
+\textbf{IDEE} de Jean-Pierre: On met nudging très fort pendant spin up et on relâche. 
+OU l'idée n'est pas d'étudier l'histoire du développement on s'interesse au moment ou le spin up est terminé. 
+
+
+\subsection{Distributions de vitesses}
+Note: je ne moyenne plus les vitesses sur le temps car mon teta n'est pas stationnaire, néanmoins \hl{TODO: étudier variation par rapport à vitesse moyenne du plan ? } \\
+A l’instant t=27min, à la fin de la simulation 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\textwidth]{distrib}
+\end{figure}
+Ce tracé est bioen en supposant distrib gaussienne, donne peu d'info sur la distribtuion des vitesses à chaque niveau. \\
+Résultats étranges pour edkf. mais bonne évaluation du vent V pour une résolution de 1000 m ( conclu ce ne sont pas les rouleaux qui expliquent ce vent ? ) \\
+resol 50m et 25m proches, on note un écart type plus grand pour 25m en bas de la CLA.  \\
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{histo}
+\end{figure}
+
+A priori des vents en surface sur estimé par des résolutions plus grande à t=27min mais correspond à Figure \ref{label} 
+
+
+
+Présence d'un pic dans les wl autour de 1000m pour toutes les résolutions. La résolution de 1000m ne peut pas les résoudre. 
+\hl{pour l'instant seul 1000m et 25 m en Lx de 25km ! }
+
+\subsection{Coupes de vitesses}
+Les noms des simulations sont respectivement data1000\_15km,  data100\_15km, data50\_15km et data25\_15km. 
+
+
+\begin{figure}[h!]
+\includegraphics[width=1\textwidth]{comp_cut_UT_level_10_t27}
+\end{figure}
+\newpage
+
+
+\subsection{Fonction d'auto-corrélation}
+Pour une fonction $\phi: \mathbb R^2 \longrightarrow \mathbb R$, pouvant être les vitesses de vents U, V, W, ... Et pour $\mathcal S \in \mathbb R^2$ le domaine périodique de ma simulation. On définit la fonction d'auto-corrélation 
+\begin{equation}
+R_{\phi}(\delta x) = \langle \phi(x) \times \phi(x+\delta x) \rangle _{\mathcal S}
+\end{equation}
+où $\langle . \rangle$ la moyenne sur le plan xy. En détaillant la moyenne \\
+\begin{equation}
+	R_{\phi}(\delta x) = \int_\mathbb{R} \phi(x) \phi(x+\delta x) dx
+\end{equation}
+R peut donc être définie comme une convolution et avec théorème de convolution ()/ thm de Wiener Khinchin) on peut réécrire R avec la transformation de Fourier
+\begin{equation}
+	R_{\phi}(\delta x) = \phi \star \phi = \phi(-x)^* \ast \phi  = \mathcal F ^{-1} \left[ \mathcal F(\phi)^* \mathcal F (\phi) \right]
+\end{equation}
+Cette façon d'implanter l'acf avec la fft qui permet un calcul en O(Nlog(N)) pour un domaine périodique au lieu de faire des boucles en O(N*N)
+
+
+\subsubsection{NOTE: Méthode utilisée par Nicolas}
+\textbf{NOTE} : Il ya a un filtre des valeurs extrème remplacé par la moyenne avant de calculer ACF. Enlève valeurs aberrante mais lissage fonction? interpolation? + enlève NAN \hl{TODO} \\
+\textbf{NOTE} : Passage par fonction  $ S2 = \langle | \phi(x+ dx) - \phi(x) | \rangle $ puis conversion. stockage intermédiaire.  \\
+
+Méthode directe est possible on crée une permutation usant de \textit{numpy.roll}(hypothèse de domaine périodique encore) Méthode en O(n2) \\
+
+\textbf{NOTE} : PAR CONTRE FAIRE DES PETITES BOUITES = les structures ne sont pas attenduees de la taille du domaine !!!! 
+
+
+
+La fonction est codé en explicitant l'équation avec  norme de L2 puis fft + normalisation. 
+
+\begin{figure}[h!]
+	\includegraphics[width=0.7\textwidth]{corr_cutUT_10}
+\end{figure}
+
+En faisant une coupe suivant $\delta x = 0$ pax exactement perpendiculaire au rlx à améliorer mais donne bonne idée surtout poru le premier rouleaux. \\
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{corr_sliceUT_10}
+\end{figure}
+
+
+Corrélation diminue avec la taille de la maille .. explication ? La taille des rouleaux aussi. 
+
+
+\section{Discussion sur le nudging}
+Pb : rappel vers un jet de basse couche en fin de simulation lorsque le jet est dissipé... On enlève le rappel ($\tau = \infty$), \\
+
+\subsection{Setup}
+\begin{minipage}{0.5\textwidth}
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multirow{4}{*}{\rotatebox{90}{Prep ideal}} 
+		& Domain size & \hl{25 x 25} x 1.6 km \\
+		& discretization & \hl{$dx = dy = 50 m$}\\
+		&  & $ 10m \leq dz \leq 20m$ \\
+		& Boundaries & 2* cyclic, no slip \\
+		\hline \hline
+		\multirow{6}{*}{\rotatebox{90}{mesonh}} 
+		& Schemes & TKEL, REVE, PPM\\ 
+		& Mixing length & DEARDOFF \\
+		& Integrat° step & 0.5 s \\
+		& Integrat° length & 1700 s \\
+		& Advection & CEN4TH \\
+		& Temporal  & RK4 \\
+		& Relaxation & $\bar U$, $\bar \Theta$ \\
+		& $\tau^{relax}$ & \hl{2000 - $\infty$}s\\
+		\hline \hline
+		\multirow{3}{*}{\rotatebox{90}{profiles}} 
+		& $\theta_g$ & 291K\\
+		& sst  & $ 295 K$\\
+		\hline
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth} 
+	\centering
+	\includegraphics[width=1\textwidth]{input.png}
+\end{minipage}
+\subsection{Evolution temporelle des moyennes}
+On a dvp de la couche limite identique 
+\begin{figure}[h!]
+	\begin{minipage}{1\textwidth} 
+	\centering
+	\includegraphics[width=0.9\textwidth]{NUDGE/evol.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{1\textwidth} 
+		\centering
+	\includegraphics[width=0.9\textwidth]{NUDGE/evol_meanwind.png}
+	\end{minipage}
+\end{figure}
+
+\subsection{Distributions}
+\begin{figure}[h!]
+	\begin{minipage}{1\textwidth} 
+		\centering
+		\includegraphics[width=0.9\textwidth]{NUDGE/distrib.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{1\textwidth} 
+		\centering
+		\includegraphics[width=0.9\textwidth]{NUDGE/histo.png}
+	\end{minipage}
+\end{figure}
+
+Influence du nudging sur écart type pas si fort. mais sur moyenne + \\
+
+
+\section{Proposition lien real case - ideal case}
+SST était bonne, discussion avec Nicolas sur profil d'humidité douteux... le but = aboit les rouleaux de lfahr et al je repars donc de la simulation. \\
+Peut etre début d'une méthode plus générique où on part d'une simualtion et on fait un "zoom" idéalisé.
+
+\subsection{Zone étudiée}
+Boit en rouge, moyenne des profils de diiférentes variables: 
+\begin{figure}[h!]
+	\includegraphics[width=1\textwidth]{ADRIAN/UT.png}
+\end{figure}
+\begin{figure}
+	\includegraphics[width=1\textwidth]{ADRIAN/oui.png}
+\end{figure}
+
+\subsection{Hésitation point de vue eulérien et semi-lagrangien}
+Boite semi lagrangienne? mais forces ignorée? chercher propagation \\
+
+
+
+\end{document}
+
+

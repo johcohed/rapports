@@ -1,0 +1,220 @@
+\input{../beamer_settings.tex}
+\addbibresource{../../groupeThese.bib}
+\graphicspath{{FIGURES/}}
+
+\AtBeginSection[]{%
+	\begin{frame}[plain]
+		\vfill
+		\begin{tikzpicture}[remember picture, overlay]
+			% Background color block on the left
+			\fill[titleblue] (current page.north west) rectangle 
+			([xshift=0.4\paperwidth]current page.south west);
+		\end{tikzpicture}
+		
+		% Left side: big section number + title
+		\begin{columns}[c]
+			\begin{column}{0.38\textwidth}
+				\begin{flushright}
+					{\color{white}\fontsize{60}{60}\selectfont
+						\thesection}\\[0.3em]
+					{\color{white}\Large\bfseries
+						\insertsectionhead}
+				\end{flushright}
+			\end{column}
+			
+			\hspace{0.04\textwidth}
+			
+			% Right side: subsection list
+			\begin{column}{0.52\textwidth}
+				\tableofcontents[
+				currentsection,
+				sectionstyle=hide,
+				subsectionstyle=show/show/hide,
+				]
+			\end{column}
+		\end{columns}
+		\vfill
+	\end{frame}
+}
+
+\usepackage[caption = false]{subfig}
+\begin{document}
+	
+
+%\customtitleframe
+	
+%% ============================================================================
+% =============================================================================
+% =============================================================================
+\section{Introduction au sujet}
+%% ============================================================================
+% =============================================================================
+% =============================================================================
+
+\subsection{Qu'est ce que les rouleaux de couche limite ?}
+\begin{frame}{Qu'est ce que les rouleaux de couche limite ?}
+			\vfill
+	\begin{minipage}{0.35\textwidth}
+	\centering
+		\includegraphics[width=\linewidth]{INTRO/intro.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.55\textwidth} 
+	Autres noms: circulations secondaire, structures, ... => Structure cohérentes de turbulence. \\
+	Caractéristiques principales (\cite{etlingRollVorticesPlanetary1993}): 
+		\begin{itemize}
+			\item De la hauteur de la Couche Limite $z_i$.
+			\item 2-5 fois la largeur de la Couche Limite : $\lambda / z_i = 2-5 $ 
+			\item angle de -+ 10/30 deg aligné avec la direction du vent (cf Ekmann ??) 			
+		\end{itemize}
+	\end{minipage}
+	\vfill
+\end{frame}
+
+\subsection{Pourquoi s'y intéresser ?}
+\begin{frame}{Pourquoi s'y intéresser ?}
+	
+	organisation de la turbulence : impact sur les flux 
+	convection peu profonde 
+	modifie l'écoulemnt : impt en cas de vent fort
+	
+	cf ligne de grain
+	
+	\cite{lfarhDownwardTransportStrong2023}
+	\cite{riviereDownwardTransportMomentum2020}
+	
+	
+	Transport de quantité de mouvement vers la surface
+	échange avec la surface
+	différent des thermiques 
+	structure organisée
+
+\end{frame}
+
+\subsection{Où sont-ils observés ?}
+\begin{frame}{Où sont-ils observés ?}
+	Observation via satellite dans le visible (rue de nuage) ou radar SAR (rugosité de la mer) ou observation au sol (Lidar, radar)
+	
+	\vfill
+	\begin{minipage}{0.65\textwidth}
+		Graphe résume certaine obs et ref de rolls \\
+		Brümmer et al CAO \\
+		Foster 2005: \\
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.3\textwidth} 
+		\begin{figure}
+			\includegraphics[width=0.8\textwidth]{roll.jpg}
+			\caption{Rouleaux durant épisode de froid au-dessus de la mer de Barents (NOAA 7, AVHRR,6.4.1988)}
+		\end{figure}
+	\end{minipage}
+	\vfill
+
+	
+\end{frame}
+
+\subsection{Comment se forment-ils ?}
+\begin{frame}{Comment se forment-ils ?}
+Différentes instabilités (\cite{etlingRollVorticesPlanetary1993}):
+\begin{itemize}
+\item Instabilité point d'inflection (théorème de Rayleigh, Brown 1980)
+\item Instabilité parallèles, pour un fluide en rotation 
+\item \textbf{Instabilité thermique} (Rayleigh Bénard) 
+\end{itemize}
+
+\vfill
+
+	Ref sur leur étude 
+	écoulemetn Rayleigh Benard Couette 
+	ex Gryscka 
+	ex Foster 
+\end{frame}
+
+\subsection{Quelles sont mes questions scientifiques ?}
+\begin{frame}{Quelles sont mes questions scientifiques ?}
+
+\end{frame}
+
+
+
+%% =======================================================================
+% ========================================================================
+% ========================================================================
+\section{1re partie de la thèse}
+%% =======================================================================
+% ========================================================================
+% ========================================================================
+
+\subsection{Point de départ des simulations}
+\begin{frame}{Tempête ALEX (et Adrian?)}
+Pk interet ? 
+présentation des tempêtes 
+présence de rouleaux, obs ? 
+\end{frame}
+
+\subsection{Couche limite de tempête idéalisée}
+\begin{frame}{Simulations idéalisées}
+Quel est le but ? 
+les enjeux ? 
+objectfof ? 
+point de départ ? 
+\end{frame}
+
+\subsection{Justification de la méthode}
+\begin{frame}{Justification de la méthode}
+	NAWDIC blabla
+\end{frame}
+
+\subsection{Comparaison cas réel - cas idéalisé}
+\begin{frame}{Comparaison cas réel - cas idéalisé}
+	NAWDIC blabla
+\end{frame}
+
+\subsection{Etude sensi ??}
+\begin{frame}{Etude sensi ??}
+	NAWDIC blabla
+\end{frame}
+
+
+%% =======================================================================
+% ========================================================================
+% ========================================================================
+\section{2e partie de la thèse}
+%% =======================================================================
+% ========================================================================
+% ========================================================================
+
+\subsection{Presentation vol NAWDIC}
+\begin{frame}{Etude sensi ??}
+	NAWDIC blabla
+\end{frame}
+
+
+\subsection{Pourquoi ce vol ? }
+\begin{frame}{Etude sensi ??}
+	NAWDIC blabla
+\end{frame}
+
+
+\begin{frame}{Analyse risque}
+	\vfill
+	\begin{itemize}
+		\item \textbf{Force} : Beaucoup de travail mis sur LES idéalisée, bonne connaissance mesoNH (moi et entourage)
+		\item \textbf{Faiblesse} : Pas de formation de base en atmosphère (possibilité de manquer des idées); 
+								pas de spécialité en CLA dans l'encadrement
+		\item \textbf{Opportunités} : Campagne NAWDIC (mesures et possibilités de collaboration)
+		\item \textbf{Menaces} : IA ? Comment s'insérer dans ce contexte ? 
+	\end{itemize}
+\end{frame}
+
+
+\section{Formations}
+\begin{frame}{Formations}
+	contenu...
+\end{frame}
+
+\begin{frame}{Conclusion}
+	\printbibliography
+\end{frame}
+
+\end{document}   

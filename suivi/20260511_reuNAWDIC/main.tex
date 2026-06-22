@@ -4,96 +4,203 @@
 
 \usepackage{animate}
 \usepackage{graphicx}
-\usepackage{multimedia}
+
 
 %Title Page
-\title{Discussion vol F10}
+\title{Boundary Layer Rolls on Valentine's Day? Study of F10 of NAWDIC}
 \author{Johan Hedman, Jean-Pierre Chaboureau}
 
 \usepackage[caption = false]{subfig}
+\setbeamertemplate{caption}[numbered]
+
 \begin{document}
 \begin{frame}
 \maketitle
 \end{frame}
 
-\begin{frame}{Question scientifique d’intérêt dans ma thèse}
+\begin{frame}{Scientific questions in my phd}
 	\vfill
 	\begin{itemize}
-	\item \textbf{Comprendre les processus} qui mène à la formation de rouleaux \\
-	Quelles instabilités ? \\
+	\item \textbf{Understanding physical processes} leading to the roll structures in the boundary layer. \\
+	Which instabilities? (\cite{etlingRollVorticesPlanetary1993}). \\
 		\vfill
-	\item Rôle dans le \textbf{transport de quantité de mouvemen}t, humidité et chaleur ?  \\
-	TODO completer (rivière et al? lfarh et al?)
+	\item Impact of structures in the \textbf{transport of momentum, moisture and heat} \\
+	( \cite{riviereDownwardTransportMomentum2020}).
 		\vfill
-	\item Vents forts  \& \textbf{flux de surfaces} : Investiguer les liens entre les flux de surface et la géométrie des rouleaux (\cite{lfarhImpactSurfaceTurbulent2024})
+	\item Strong winds   \& \textbf{heat fluxes}: further study the relationship between the rolls' geometry and surface fluxes (\cite{lfarhImpactSurfaceTurbulent2024})
 \end{itemize}
 	\vfill
 \end{frame}
 
-\begin{frame}{Situation du vol 10}
-	Vol sur le front chaud, dans le courant jet.  \\
-	\begin{minipage}{0.6\textwidth}
-	\begin{figure}
-		\centering
-		\includegraphics[width=1\linewidth]{AERIS.png}
-		\caption{Vent@925hPa, nuages moyens (visuel d'AERIS, \hl{TODO}jsp qui et Jeremy Tulles)}
-		\label{fig:aeris1630}
-	\end{figure}
-	
+
+\begin{frame}{General presentation of the F10}	
+
+Several crossings of a warm front and associated mid-level jet. \\
+
+\vfill
+
+	\begin{minipage}{0.3\textwidth}
+		Flight of the 14/02/2026 \\
+		\vspace{0.2cm}
+		 \begin{tabular}{cc}
+		 	Take off & 14:03 UTC \\
+		 	Landing & 18:10 UTC \\
+		 	S1 overpass & 18:30 UTC \\
+		 	EarthCARE overpass & 15:30 UTC \\
+		 	 
+		 \end{tabular}	
 	\end{minipage}
 	\hfill
-	\begin{minipage}{0.35\textwidth}
+	\begin{minipage}{0.6\textwidth}
 		\begin{figure}
-		\movie[width=0.655\textwidth, height=\textwidth, autostart, loop]{}{movie.mp4}
-		\caption{Simu MesoNH à 4 km de résolution (JP Chaboureau)}
-		\label{fig:aeris1630}
-		\end{figure}	
-	%	\movie[width=\linewidth, autostart]{}{movie.mp4}
-		%\includegraphics[width=\linewidth]{frames/frame-6.png}
-
+			\centering
+			\includegraphics[width=1\linewidth]{AERIS.png}
+			\caption{Wind@925hPa \& mid-level cloud cover (AERIS)}
+			\label{fig:aeris1630}
+		\end{figure}
+		
 	\end{minipage}
-	
-	
-
+\vfill
 \end{frame}
 
-\begin{frame}{Pourquoi ce vol ?}
+\begin{frame}{Boundary layer structures in SAR images?}
+	\vfill
+	
 	\begin{minipage}{0.35\textwidth}
+		\vfill
 		\begin{itemize}
-			\vspace{1cm}
-			\item Passage S1 à 18/30 UTC
-			\vspace{1.5cm}
-			\item Observation de structure dans les vitesses verticales du RASTA
-			\vspace{0.5cm}
-			\item 15:30 UTC : HALO et EARTHCare
-			
+			\item Organized structures on sea roughness signal
+			\vfill
+			\item Analyses to be done to retrieve and compare to LES simulation 
 		\end{itemize}
-	\end{minipage} \hfill
-	\begin{minipage}{0.55\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{sar.png}
-		SAR data de S1-A, passage à 18:32UTC
-		\includegraphics[width=\linewidth]{zoomRASTA.png}
-		Quicklook Vz du RASTA (Julien Delanoë)
+	\vfill	
 	\end{minipage}
+	\hfill
+	\begin{minipage}{0.6\textwidth}
+		\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{sar.png}
+		\caption{SAR data of S1-A at 18:03 UTC (image from ESA) }
+		\label{fig:aeris1630}
+		\end{figure}
+		
+	\end{minipage}
+	\vfill
 \end{frame}
 
-\begin{frame}{En quoi l'étude de ce vol participe au questionnement ?}
+\begin{frame}{Structures in the RASTA acquisition?}
+Patterns in the boundary layer on the RASTA reflectivity.
+		\begin{figure}
+		\centering
+		\includegraphics[width=0.75\linewidth]{RASTA_edit.png}
+		\caption{RASTA reflectivity (Julien Delanoë)}
+		\label{fig:aeris1630}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}
+	\vfill
+Vertical wind velocity can be retrieved from the RASTA signal. 
+\vfill
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\linewidth]{RastaVZALL.png}
+		\caption{RASTA W-wind (Julien Delanoë)}
+		\label{fig:aeris1630}
+	\end{figure}
+	\vfill
+\end{frame}
+
+
+\begin{frame}{Special interest in the lower legs : leg 5 }
+	Coherent structures detected by the RASTA (resolution 300m / 60m)? \\
+	\vfill
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\linewidth]{RastaVZL5.png}
+		\caption{W-wind retrieved from RASTA signal in legs 5  (Julien Delanoë)}
+		\label{fig:aeris1630}
+	\end{figure}
+	\vfill
+\end{frame}
+
+\begin{frame}{Special interest in the lower legs : leg 7}
+	\vfill
+	Shallow convection in the leg 7. \\
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\linewidth]{RastaVZL7.png}
+		\caption{W-wind retrieved from RASTA signal in legs 7  (Julien Delanoë)}
+		\label{fig:aeris1630}
+	\end{figure}
+	\vfill
+\end{frame}
+
+
+\begin{frame}{Can we simulate the general situation?}
+	\vfill
+	
+	\begin{minipage}{0.55\textwidth}
+		First Meso-NH realistic simulation at a resolution of 4 km. 
+		\vfill
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\linewidth]{FIGURES/figRASTAleg5}
+			\caption{RASTA and simulation reflectivity comparison (JP Chaboureau)}
+			\label{fig:figrastaleg5}
+		\end{figure}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\textwidth}
+		\begin{figure}
+			\centering
+			\animategraphics[loop, autoplay, width=0.6\textwidth]{1}{frames/frame-}{0}{8}
+			\caption{$T_B$ comparison between MSG and simulation (JP Chaboureau)}
+			\label{fig:aeris1630}
+		\end{figure}
+		
+	\end{minipage}
+	\vfill
+\end{frame}
+
+
+\begin{frame}{Hint on instabilities?}
+	\vfill
+	
+	\begin{minipage}{0.35\textwidth}
+		\vfill
+		\begin{figure}
+			\centering
+			\includegraphics[width=\linewidth]{FIGURES/MNH/DOMAIN_UT_lev148.png}
+			\caption{U-wind in the Meso-NH simulation}
+			\label{fig:figrastaleg5}
+		\end{figure}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.55\textwidth}
+		\begin{figure}
+		\centering
+	\includegraphics[width=0.8\linewidth]{FIGURES/MNH/analyse_wind.png}
+	\caption{Mean wind and potential temperature profiles }
+	\label{fig:figrastaleg5}
+		\end{figure}
+		
+	\end{minipage}
+	\vfill
+\end{frame}
+
+\begin{frame}{Objectives \& next steps}
+The objectives of the study are :
 	\vfill
 \begin{itemize}
-	\item Reproduire les rouleaux dans la LES, \textbf{comparaison avec signature SAR }\\
-	Travail de N. Maury sur Alex: comparaison de ces deux cas.
+	\item to \textbf{reproduce boundary layer roll structures} and compare Meso-NH simulations with observations in RASTA and SAR
 	\vfill
-	
-	\item Rapport avec les flux ? Pas de mesure ? 
+	\item to study the relation between the SAR signal and the 3D wind structure
 	\vfill
-	
-	\item Etudier les structures des legs 5 et 6. Avion dans la couche limite 
+	\item to \textbf{quantify the impact of the structures in the transport} of momentum, moisture and heat. 
 \end{itemize}
 \vfill
-	
-	
-	
 \end{frame}
 
 \end{document}   

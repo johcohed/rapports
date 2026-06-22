@@ -1,0 +1,353 @@
+\input{settings.tex}
+\usepackage[style=authoryear, backend=biber]{biblatex}
+\graphicspath{{~/CESBIO/outputs/}}
+\addbibresource{Rolls.bib}
+\usepackage{hyperref}
+\begin{document}
+
+\title{Evolution de la branche VolumeChangeJohan}
+\date{October 2025}
+
+\maketitle{}
+\section{Résumé Travail}
+Ces derniers temps peu de modifications ont été apporté au travail fait au CDD en tant que tel. Beaucoup de temps est passé dans le fait de merger les deux branches master et VolumeChangeJohan. \\
+Ceci a ensuite été défait pour pouvoir continuer de travailler sur la branche de développement. Car je ne pense pas qu'elle soit prête à être mise sur master. Plusieurs aspects ne fonctionnent pas :
+\begin{itemize}
+	\item Le \textbf{hot-spot} ne fonctionne pas. Soit la stratégie de tester les collisions réelles/fictives avec le coefficient d'extinction corrigé pour le hot-spot est mauvaise. Dans ce cas je pensais à enlever ce test et mettre l'impact du hot-spot dans un poids. Ou alors l'implémentation a un souci et surévalue $\alpha$ (j'ai l'impression) -> cf test D
+	\item La \textbf{fluorescence} n'est pas implémentée
+	\item Le \textbf{bilan radiatif} est commenté. Par contre les modifications faites sur master sont mises sur VolumeChangeJohan pour pouvoir les adapter sur la branche. 
+	\item les \textbf{objets}, mon volume prend automatiquement toute la scène et est donc pas adapté aux objets qui ont une surface avec des propriétés optiques. 
+	\item et l'\textbf{atmosphère} j'imagine.
+	\item Le \textbf{ratio tracking} est commenté, je n'ai pas fait la validation dessus. 
+	\item L'émission thermique est extrêmement inefficace et baisé pour la diffusion multiple. Il faudrait rajouter l'intégration des émission sur le segment.
+	
+\end{itemize}
+J'ai essayé de rattraper le plus possible la branche master. En particulier pour les parties qui ont été modifiées dans à la foix dans master et la branche de VolumeChange. Je ne pense pas que ce soit parfait et il y aura encore du travail mais je  me dis c'est déjà cela de fait. \\
+
+Ensuite le travail c'est focalisé sur la validation dans le visible, pour le hot spot et pour le thermique. J'ai aussi rajouté la possibilité d'avoir une scène répétitive. Pas mal de soucis demeurent pour le thermique où la méthode implémentée est très naive. 
+
+
+\section{Structure code}
+La structure du code n'a pas changé depuis que je suis parti, je vous remet la figure \ref{fig:struct} pour rappel. Pour l'instant ratio =Tracking() et DeltaTracking sont regroupés dans un même fichier NullCollision.cpp .
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{VolumeStructure.png}
+\caption{Structure du code pour gérer les volumes}\label{fig:struct}
+\end{figure}
+
+\section{Travail restant}
+En plus de ce qui a été dit plus haut
+\begin{itemize}
+	\item D'autre pistes pour améliorer la performance serait un précalcul des coéfficient d'extinction.
+	\item gérer les accès avec OpenVDB au lieu des vecteurs stockant une grille régulière.
+\end{itemize} 
+
+\newpage
+\section{Tests de validation}
+Les simulations pour effectuer les tests ainsi que les codes de comparaison et graphiques sont sur le dépôt git : \url{https://github.com/johcohed/CESBIO} 
+\subsection{TEST A: Plot végétation homogène}
+\paragraph{Paramètre de la simulation}  Simulation pour tester végétation sur un cas simple. Plot homogène, avec répétition de scène et diffusion multiple. Dans le visible. \\
+\begin{minipage}{0.45\textwidth}
+\centering
+\begin{tabular}{c|c|c}
+		BiDIr param & pixel size & 0.05 m \\
+					& rays/pixel & 1000 \\ 
+					& max scattering & 80 \\
+		\hline
+		Geometry &  Dimensin plot & 1 x 2 x 2 m \\
+					& scene repetition  & yes \\
+		\hline
+		Vegetation & Hotspot & 0 \\
+				   & LAI & 1 \\
+				   & LAD & spherical \\
+				   & OP  & deicuous\_leafs\\ 
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{A_homo_plot_VIS/maket.png}
+\end{minipage}
+\paragraph{Résultats} Compare les images au Nadir entre la version développement sur VolumeChangeJohan et master, noté dev et ref respectivement.
+
+\begin{figure}[h!]
+\begin{minipage}{0.55\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{A_homo_plot_VIS/images.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.35\textwidth}
+	\includegraphics[width=1\textwidth]{A_homo_plot_VIS/diff.png}
+\end{minipage}
+\hfill
+\centering
+\begin{minipage}{0.55\textwidth}
+	\includegraphics[width=1\textwidth]{A_homo_plot_VIS/scatter.png}
+\end{minipage}
+\end{figure}
+
+\paragraph{Discussion} Comparaison satisfaisante entre DART-LUX utilisée comme référence et la branche en développement. 
+
+
+\newpage
+\section{TEST B: Test répétition}
+\paragraph{Paramètre de la simulation}  Simulation pour tester la répétition de la scene en mettant le cube au bord. \\
+\begin{minipage}{0.45\textwidth}
+	\centering
+	\begin{tabular}{c|c|c}
+		BiDIr param & pixel size & 0.1 m \\
+		& rays/pixel & 500 \\ 
+		& max scattering & 80 \\
+		\hline
+		Geometry & plot height & 1 m \\
+		& scene repetition  & yes \\
+		\hline
+		Vegetation & Hotspot & 0 \\
+		& LAI & 1 \\
+		& LAD & spherical \\
+		& OP  & deicuous\_leafs\\ 
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\centering
+%	\includegraphics[width=1\textwidth]{B_test_repetitive_scene_VIS/maket.png}
+\end{minipage}
+\paragraph{Résultats} Compare les images au Nadir entre la version développement sur VolumeChangeJohan et master, noté dev et ref respectivement.
+
+\begin{figure}[h!]
+	\begin{minipage}{0.55\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{B_test_repetitive_scene_VIS/images.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.35\textwidth}
+		\includegraphics[width=1\textwidth]{B_test_repetitive_scene_VIS/diff.png}
+	\end{minipage}
+	\hfill
+	\centering
+	\begin{minipage}{0.55\textwidth}
+		\includegraphics[width=1\textwidth]{B_test_repetitive_scene_VIS/scatter.png}
+	\end{minipage}
+\end{figure}
+
+\paragraph{Discussion}
+Bon fonctionnement de la répétition des scènes. 
+
+\newpage
+\section{TEST D: Test Hotspot}
+Test non concluant. La réflectance est largement sous estimée ou nulle avec hot-spot.  
+\paragraph{Paramètre de la simulation}  Simulation pour tester le hotspot avec un plot homogène \\
+\begin{minipage}{0.45\textwidth}
+	\centering
+	\begin{tabular}{c|c|c}
+		BiDIr param & pixel size & 0.05 m \\
+		& rays/pixel & 1000 \\ 
+		& max scattering & 80 \\
+		\hline
+		Geometry & plot height & 1 m \\
+		& scene repetition  & yes \\
+		\hline
+		Vegetation & Hotspot & 0 \\
+		& LAI & 1 \\
+		& LAD & spherical \\
+		& OP  & deicuous\_leafs\\ 
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\centering
+	%	\includegraphics[width=1\textwidth]{B_test_repetitive_scene_VIS/maket.png}
+\end{minipage}
+\paragraph{Résultats} Compare les images au Nadir entre la version développement sur VolumeChangeJohan et master, noté dev et ref respectivement.
+
+\begin{figure}[h!]
+	\begin{minipage}{0.55\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{D_Hotspot_VIS/images.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.35\textwidth}
+		\includegraphics[width=1\textwidth]{D_Hotspot_VIS/diff.png}
+	\end{minipage}
+\end{figure}
+
+Compare les BRF maps:
+%\begin{figure}[h!]
+	%\centering
+	%\includegraphics[width=1\textwidth]{D_Hotspot_VIS/images.png}
+%\end{figure}
+\paragraph{Discussion}
+coefficient d’extinction bien trop fort pour le hot-spot. 
+\begin{equation}
+	\sigma_t^{HS} = \sigma_t \left(1-\beta \exp(-\alpha l) \right)
+\end{equation}
+Avec $\beta = \sqrt{\frac{\mu_v G(\Omega_s)}{|\mu_s| G(\Omega_v)}}$ et $\alpha = \frac{\Delta (\Omega_s, \Omega_v) \mu_v}{s_f}$. \\
+Et sécurité mise pour assurer $\sigma_T^{HS} \leq \sigma_T \leq \sigma_T^{max}$. \\
+C'est ce coefficient d'extinction qui est utilisé pour faire le test de null collision ($P(vraie scattering) = \sigma_T^{HS}/\sigma_T^{max}$). Si nul toutes les collisions sont fictives, . 
+
+\newpage
+\section{TEST E: Test Thermique (single-scattering)}
+\paragraph{Paramètre de la simulation}  Simulation pour tester l'émissivité themique dans un milieu homogène avec une seule diffusion \\
+\begin{minipage}{0.45\textwidth}
+	\centering
+	\begin{tabular}{c|c|c}
+		BiDIr param & pixel size & 0.05 m \\
+		& rays/pixel & 1000 \\ 
+		& max scattering & 1 \\
+		\hline
+		Geometry  & plot width & 2m\\
+				& plot height & 1 m \\
+				 & scene repetition  & yes \\
+		\hline
+		Vegetation & Hotspot & 0 \\
+		& LAI & 5 \\
+		& LAD & spherical \\
+		& OP  & deicuous\_leafs\\ 
+		& Temperatures & $T_g = 300K$, $T_l = 290K$
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{E_Thermal/maket.png}
+\end{minipage}
+\paragraph{Résultats} Compare les images au Nadir entre la version développement sur VolumeChangeJohan et master, noté dev et ref respectivement.
+
+\begin{figure}[h!]
+	\begin{minipage}{0.55\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{E_Thermal/images.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.35\textwidth}
+		\includegraphics[width=1\textwidth]{E_Thermal/diff.png}
+	\end{minipage}
+	\hfill
+	\centering
+	\begin{minipage}{0.55\textwidth}
+		\includegraphics[width=1\textwidth]{E_Thermal/scatter.png}
+	\end{minipage}
+\end{figure}
+Je fais aussi une comparaison avec DART-FT (et avec un plot au lieu d'un cube). C'est cette comparaison ci qui est maintenant dans les TEST du dépôt git.  
+\begin{figure}[h!]
+	\begin{minipage}{0.55\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{E_Thermal/images_FT.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.35\textwidth}
+		\includegraphics[width=1\textwidth]{E_Thermal/diff_FT.png}
+	\end{minipage}
+	\hfill
+	\centering
+	\begin{minipage}{0.55\textwidth}
+		\includegraphics[width=1\textwidth]{E_Thermal/scatter_FT.png}
+	\end{minipage}
+\end{figure}
+
+\paragraph{Discussion}
+Comparaison montre un biais avec DART-LUX et DART-FT. Pour la comparaison avec DART-FT je pense une autre simulation avec FT mieux paramétrée peut être intéressante car mon hypothèse est que c'est DART FT qui sur-estime les températures avec ma paramétrisation du modèle. \\
+Je sui toutefois loin d'être satisfait de l'émission thermique, ce qui est implémenté dans le code est l'ajout d'une émission pour le milieu d'intéraction $i$ lors d'un évenement de diffusion réel. 
+$$ L^e(i) += u_l(i) \sigma_a(i) L^B(T_i)$$ \\
+
+
+\newpage
+\section{TEST F: Plusieurs plot homogène dans même scène}
+\paragraph{Paramètre de la simulation}  Les plots ont des OP différentes et des LAI différents. Ils se superposent au centre pour tester le tirage des milieux d'interaction. \\
+\begin{minipage}{0.45\textwidth}
+	\centering
+	\begin{tabular}{c|c|c}
+		BiDIr param & pixel size & 0.05 m \\
+		& rays/pixel & 1000 \\ 
+		& max scattering & 1 \\
+		\hline
+		Geometry  & plot width & \\
+		& plot height & 1 m \\
+		& scene repetition  & yes \\
+		\hline
+		Vegetation & Hotspot & 0 \\
+		& LAI & 1 (cube A), 5 (cube B) 1 cube C  \\
+		& LAD & spherical x 3 \\
+		& OP  & deicuous\_leafs  deciduous\_leaf citronus\_leaf\\ 
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{F_multiple_plots_VIS/maket.png}
+\end{minipage}
+\paragraph{Résultats} Compare les images au Nadir entre la version développement sur VolumeChangeJohan et master, noté dev et ref respectivement.
+
+\begin{figure}[h!]
+	\begin{minipage}{0.55\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{F_multiple_plots_VIS/images.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.35\textwidth}
+		\includegraphics[width=1\textwidth]{F_multiple_plots_VIS/diff.png}
+	\end{minipage}
+	\hfill
+	\centering
+	\begin{minipage}{0.55\textwidth}
+		\includegraphics[width=1\textwidth]{F_multiple_plots_VIS/scatter.png}
+	\end{minipage}
+\end{figure}
+
+\paragraph{Discussion} Biaisé aussi. Pas d'erreur plus importante aux endroit ou les plots se superposent donc pas dû au tirage des multiples milieux d'intéractions. Je pense c'est un souci plus général dans le tracé de rayon. 
+
+ 
+ 
+ 
+ \newpage
+ \section{TEST G: Test Thermique (multiple-scattering)}
+ \paragraph{Paramètre de la simulation}  Simulation pour tester l'émissivité themique dans un milieu homogène avec une seule diffusion \\
+ \begin{minipage}{0.45\textwidth}
+ 	\centering
+ 	\begin{tabular}{c|c|c}
+ 		BiDIr param & pixel size & 0.1 m \\
+ 		& rays/pixel & 1000 \\ 
+ 		& max scattering & 1 \\
+ 		\hline
+ 		Geometry  & plot width & \\
+ 		& plot height & 1 m \\
+ 		& scene repetition  & yes \\
+ 		\hline
+ 		Vegetation & Hotspot & 0 \\
+ 		& LAI  & 5(cube1) 1 (cube2) a cube(")\\
+ 		& LAD & spherical \\
+ 		& OP  & deicuous\_leafs\\ 
+ 	\end{tabular}
+ \end{minipage}
+ \hfill
+ \begin{minipage}{0.45\textwidth}
+ 	\centering
+ 		\includegraphics[width=1\textwidth]{G_Thermal_mult_scat/maket.png}
+ \end{minipage}
+ \paragraph{Résultats} Compare les images au Nadir entre la version développement sur VolumeChangeJohan et master, noté dev et ref respectivement.
+ 
+ \begin{figure}[h!]
+ 	\begin{minipage}{0.55\textwidth}
+ 		\centering
+ 		\includegraphics[width=1\textwidth]{G_Thermal_mult_scat/images.png}
+ 	\end{minipage}
+ 	\hfill
+ 	\begin{minipage}{0.35\textwidth}
+ 		\includegraphics[width=1\textwidth]{G_Thermal_mult_scat/diff.png}
+ 	\end{minipage}
+ 	\hfill
+ 	\centering
+ 	\begin{minipage}{0.55\textwidth}
+ 		\includegraphics[width=1\textwidth]{G_Thermal_mult_scat/scatter.png}
+ 	\end{minipage}
+ \end{figure}
+ 
+ \paragraph{Discussion} La catastrophe. J'ai pas de piste : la réflectance est ok en mode R avec la même simulation. \\
+ Soit biais du single scattering amplifié ou (plutôt)J  erreur dans l'ajout de l'émission dans intersect mais je ne sais pas pourquoi. \\
+ Pour l'émission j'ajoute 
+ $ u_l \sigma_a L^B $ je ne suis pas très sur de la formule du coefficient d'absorption pour les turbides.  
+ 
+ 
+\end{document}
+

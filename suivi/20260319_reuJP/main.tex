@@ -1,0 +1,85 @@
+\input{../beamer_settings.tex}
+\addbibresource{../../groupeThese.bib}
+\graphicspath{{FIGURES/}}
+
+%Title Page
+\title{Réunion Lundi 12/02/2026}
+\author{}
+
+\usepackage[caption = false]{subfig}
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Dernière discussion}
+Ce qu'on avait dit
+  \begin{itemize}
+    \item Enlever nudging du vent W pour clarifier la méthode
+    \item 
+    \item Relief sur les rouleaux (\cite{swathiUniqueRollClouds2025})
+    \item Perturbation ? Application d'une perturabtion sur le vent car instabilité la plus forte
+    \item Diag rolls: bilan flux turbulents, disytribution vitesse toujours à faire 
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Simulation ADRIAN\_3D}
+\begin{minipage}{0.5\textwidth}
+	\centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    \multirow{4}{*}{\rotatebox{90}{Prep ideal}} 
+               & Domain size & \hl{15 x 15} x 1.6 km \\
+               & discretization & \hl{$dx = dy = 100- 50- 25m$}\\
+               &  & $ 10m \leq dz \leq 20m$ \\
+               & Boundaries & 2* cyclic, no slip \\
+               \hline \hline
+    \multirow{6}{*}{\rotatebox{90}{mesonh}} 
+               & Schemes & TKEL, REVE, PPM\\ 
+               & Mixing length & DEARDOFF \\
+               & Integrat° step & 0.04 s \\
+               & Integrat° length & 1500 s \\
+               & Advection & CEN4TH \\
+               & Temporal  & RK4 \\
+               & Relaxation & $\bar U$,$\bar V$,$\bar W$, $\bar \Theta$ \\
+               & $\tau^{relax}$ & 2000 s\\
+     \hline \hline
+    \multirow{3}{*}{\rotatebox{90}{profiles}} 
+               & $\theta_g$ & 291K\\
+               & sst  & $ 295 K$\\
+               \hline
+  \end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth} 
+  \centering
+  \includegraphics[width=1\textwidth]{input.png}
+\end{minipage}
+\end{frame}
+
+
+% --------------------------------------------
+% -- Evolution --
+% --------------------------------------------
+\begin{frame}{Dépendance à la taille du mesh}
+Coupe de $\langle \bar U \rangle - \bar U$ avec $\bar U$ la moyenne de u sur t= $[25:27]$ min. \\
+\includegraphics[width=1\textwidth]{comp_cut_UTpert_level_10_t27}
+\end{frame}
+
+\begin{frame}{Dépendance à la taille du mesh}
+On fait la corrélation spatiale \\
+	\includegraphics[width=1\textwidth]{corr_cutUTpert_10}
+\end{frame}
+
+\begin{frame}{Dépendance à la taille du mesh}
+coupe sur dx = 0 \\
+	\includegraphics[width=0.5\textwidth]{corr_sliceUTpert_10}
+\end{frame}
+
+\begin{frame}{Dépendance à la taille du mesh}
+SPectre densité d'energie \\
+\includegraphics[width=0.5\textwidth]{spectr}
+\end{frame}
+
+\end{document}   

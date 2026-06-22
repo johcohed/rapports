@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {1}Présentation du cadre de l'expérience}{2}{section.1}%
+\contentsline {section}{\numberline {2}Sensibilité à la résolution}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Développement de la couche limite}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Est ce que c'est un dvp de couche limite ou un spin up ??}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Distributions de vitesses}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Coupes de vitesses}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Fonction d'auto-corrélation}{6}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}NOTE: Méthode utilisée par Nicolas}{6}{subsubsection.2.5.1}%
+\contentsline {section}{\numberline {3}Discussion sur le nudging}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Setup}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Evolution temporelle des moyennes}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Distributions}{10}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Proposition lien real case - ideal case}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Zone étudiée}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Hésitation point de vue eulérien et semi-lagrangien}{10}{subsection.4.2}%

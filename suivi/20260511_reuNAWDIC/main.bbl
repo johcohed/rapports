@@ -19,6 +19,64 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{etlingRollVorticesPlanetary1993}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a1dff021a12d73c774a8d624d18e161b}{%
+           family={Etling},
+           familyi={E\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3afb6366030ee43d930c95c25471130}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9b483bf6de30fef2dd093483c0b8100b}
+      \strng{fullhash}{9b483bf6de30fef2dd093483c0b8100b}
+      \strng{bibnamehash}{9b483bf6de30fef2dd093483c0b8100b}
+      \strng{authorbibnamehash}{9b483bf6de30fef2dd093483c0b8100b}
+      \strng{authornamehash}{9b483bf6de30fef2dd093483c0b8100b}
+      \strng{authorfullhash}{9b483bf6de30fef2dd093483c0b8100b}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0006-8314, 1573-1472}
+      \field{journaltitle}{Boundary-Layer Meteorology}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{3}
+      \field{shortjournal}{Boundary-Layer Meteorol}
+      \field{shorttitle}{Roll Vortices in the Planetary Boundary Layer}
+      \field{title}{Roll Vortices in the Planetary Boundary Layer: {{A}} Review}
+      \field{urlday}{23}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{65}
+      \field{year}{1993}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{215\bibrangedash 248}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1007/BF00705527
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/XUT2LXGE/Etling et Brown - 1993 - Roll vortices in the planetary boundary layer A review.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF00705527
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF00705527
+      \endverb
+      \keyw{A LIRE}
+    \endentry
     \entry{gryschkaImpactForcedRoll2014}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=80552fef12cca7da6ce02a512bea124d}{%
@@ -151,6 +209,70 @@
       \verb{url}
       \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023JD040191
       \endverb
+    \endentry
+    \entry{riviereDownwardTransportMomentum2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=eff8ea5e14e12d1b9364848776ff1526}{%
+           family={Rivière},
+           familyi={R\bibinitperiod},
+           given={Gwendal},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81d69d0cebd1789eb033336442e35058}{%
+           family={Ricard},
+           familyi={R\bibinitperiod},
+           given={Didier},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7591cdb83ebc5d746a5dd9da8f937726}{%
+           family={Arbogast},
+           familyi={A\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{87af0de069884886bbb5c486bd48c113}
+      \strng{fullhash}{87af0de069884886bbb5c486bd48c113}
+      \strng{bibnamehash}{87af0de069884886bbb5c486bd48c113}
+      \strng{authorbibnamehash}{87af0de069884886bbb5c486bd48c113}
+      \strng{authornamehash}{87af0de069884886bbb5c486bd48c113}
+      \strng{authorfullhash}{87af0de069884886bbb5c486bd48c113}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Processes leading to the formation of strong surface wind gusts within an idealized sting-jet extratropical cyclone are investigated using a high-resolution mesoscale model. It is motivated by real case studies that have shown that damaging surface winds ahead of the bent-back warm front of an extratropical cyclone are often due to the presence of a sting jet, which is a low-level mesoscale jet, the air masses of which descend from the cloud head to the top of the boundary layer. Different numerical simulations show that surface winds below the leading edge of the sting jet increase with increased horizontal resolution and surface roughness. For typical land-surface roughness, the intensity of near-surface wind gusts increases rapidly with horizontal resolution, while the sting-jet intensity above the boundary layer does not vary with resolution. A focus on the 1-km grid-spacing simulation with land-surface roughness is then made. It shows stronger surface winds ahead of the bent-back warm front than near the cold conveyor-belt jet. It also exhibits multiple bands of strong surface wind speed, similar to real sting-jet cyclones. These multiple bands are closely linked with multiple resolved convective rolls in the boundary layer, the descending branches of which are responsible for the downward transfer of momentum. Sensitivity experiments and a stability analysis show that cooling due to sublimation and melting of precipitating ice hydrometeors below the leading edge of the sting jet triggers and invigorates boundary-layer convective rolls by reducing the buoyancy of air masses near the precipitation base and below. Closer to the surface, the transfer of momentum is predominantly taken over by subgrid-scale turbulent fluxes.}
+      \field{issn}{0035-9009, 1477-870X}
+      \field{journaltitle}{Quarterly Journal of the Royal Meteorological Society}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{729}
+      \field{shortjournal}{Quart J Royal Meteoro Soc}
+      \field{title}{The Downward Transport of Momentum to the Surface in Idealized Sting‐jet Cyclones}
+      \field{urlday}{13}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{volume}{146}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1801\bibrangedash 1821}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1002/qj.3767
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/CKEQ4B4S/Rivière et al. - 2020 - The downward transport of momentum to the surface in idealized sting‐jet cyclones.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3767
+      \endverb
+      \verb{url}
+      \verb https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3767
+      \endverb
+      \keyw{stingjet}
     \endentry
   \enddatalist
 \endrefsection

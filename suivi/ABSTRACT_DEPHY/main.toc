@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Présentation du cadre de l'expérience}{2}{section.1}%
+\contentsline {section}{\numberline {2}Sensibilité à la résolution}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Développement de la couche limite}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Distributions de vitesses}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Coupes de vitesses}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Fonction d'auto-corrélation}{5}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}NOTE: Méthode utilisée par Nicolas}{5}{subsubsection.2.4.1}%
+\contentsline {section}{\numberline {3}Dvp CL ou spin up ??}{5}{section.3}%
+\contentsline {section}{\numberline {4}Discussion sur le nudging}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Setup}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Evolution temporelle des moyennes}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Distributions}{9}{subsection.4.3}%

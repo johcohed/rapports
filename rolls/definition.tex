@@ -1,5 +1,6 @@
 \chapter{Généralités/Contexte}
 
+
 \section{Caractéristiques générales des rouleaux de couche limite}
 Structure cohérentes de la Couche Limite Atmosphérique (CLA), occupent la hauteur de la CLA. \\
 Aussi bien au dessus de la mer que la terre. \\
@@ -13,8 +14,19 @@ Observées dans de nombreuses situations (voir section),souvent associées à de
 	\caption{Caractéristiques des rouleaux (figure modifées et infos de \cite{etlingRollVorticesPlanetary1993})}
 \end{figure} 
 
+\section{Definition de termes}
+rapprot d'aspect 
+
 \section{Situation d'observations de rouleaux}
 On retrouve des rouleaux dans de nombreux contextes que je détaille ici. Les caractéristiques sont néanmoins différentes et peut être des processus différents expliquent la présence de structure turbulente organisées. 
+
+\subsection{Couche Limite continentale}
+\cite{weckwerthObservationalStudyEvolution1999}: Observation sur continent, évolution rlx, rapports de 1.1 à 4; $\zeta$ inutile pour formation (plutôt Ra ou flux de H) mais utile pour voir la fin ($\zeta < 25$). \\
+Évolution convection 2D à 3D sur continent. \\
+Peut être dû aussi à des hétérogénéités de surface (\cite{marongaLargeEddySimulationsSurface2012}) dans des LES idéalisées. Etude de même du cycle diurne. Corrélation rouleaux et hétérogénéités visible si moyenne assez longue. 
+
+
+
 
 \subsection{Cyclones extra-tropicaux}
 \begin{itemize}
@@ -30,7 +42,11 @@ their descent because they met favorable conditions for
 convective instability further below the precipitation base."
 
 cf Browning et al 2015 ?
+
+\item SAR + LES de Nicolas Maury (attente de papier)
 \end{itemize}
+
+
 
 
 \hl{Quelle instabailité est derrière ??}
@@ -40,7 +56,8 @@ plutôt cellules ?
 
 \subsection{Hurricanes}
 \begin{itemize}
-	\item revue de littérature, analyse stabilité \cite{foster2005}
+	\item  étude théorique \cite{foster2005}
+	\item simulation réel de Ivan par Zhu 208
 	\item cas idéalisé de CL de hurricane (\cite{nakanishiLargeEddySimulationRoll2012})
 \end{itemize}
 
@@ -71,34 +88,47 @@ fractional area of of rising motion $\sigma$ ??
 
 
 \subsection{Hétérogéniité de flux de surface}
-maronga and Raasch 2013, 
+
 
 feedback avec ombres des nuages
 
 
 \begin{table}[h!]
-	\begin{tabular}{c||c|c|c}
-		evenement & $R_i$ & $\zeta$ & $\lambda / H$ \\
+	\begin{tabular}{c||c ||c|c|c|c}
+		ref                                            & evt       & U & $\zeta$     & $\lambda / z_i$ &  Mesure\\
 		\hline \hline			
-		CAO Brummer &     &         & 2.6 - 6.5 \\
+		\cite{brummerRollCellConvection1999}           & CAO       & 15  &           & 2.6 - 6.5       & avion\\
+		\cite{weckwerthObservationalStudyEvolution1999}& Continent & mid &$<25$      & 1.1 to 4        & sol, Radar\\
+		\cite{foster2005}                              & Hurricane & 40  &$\approx 0$& 2.4             & SAR + ground
 	\end{tabular}
 \end{table}
 
 
 
-\section{Introduction aux processus physiques des rouleaux}
+\section{Instabilités}
+
+
+\section{Définition}
+Qu'est ce que c'est ??
+
+\section{Instabilités dans d’atmosphère liées aux échelles et processus}
+
+\section{Les instabilités de la couche limite}
+\subsection{Instabilité thermique}
+\textbf{instabilité thermique}: Cause principale de l'apparition de tourbillon en rouleaux. Convection de Rayleigh Bénard. Explique pk rolls surtout observés au dessus de la mer pendant CAO et au dessus de la terre durant la journée.\\
+
+Mais aussi une importance de l'évaporation et sublimation (evaportative cooling) (\cite{riviereDownwardTransportMomentum2020}). Peut etre aussi du au refroidissiement radiatif des stratus mais attention resolution verticale très fine necessaire (Lilly, de Lozar \& Mellado (2015) Mellado (2017)
+\subsection{Instabilité dynamique}
+\textbf{instabilité d'inflection} : lié au cisaillement de vent dans une couche d'Ekmann. Le profil de vorticité admet un max qui coincide avec le max de vitesse v qui est un point d'inflection. $\lambda/H = 3$. Condition : point d'inflection $<0.6 z_i$. instabilité très faible dans une CLA turbulente. 
+
+\subsection{Instabilité parallèle}
+\textbf{instabilité parallèles} Seulement dans écoulement rotatif. Rouleaux plus étendu $\lambda/H = 6$
+
 Dûs à des instabilités de cisaillement et thermiques. A distinguer des cellules. Les différentes
 
-\subsection{Différents types d'instabilités: } 
-\begin{itemize}
-\item \textbf{instabilité d'inflection}: lié au cisaillement de vent dans une couche d'Ekmann. Le profil de vorticité admet un max qui coincide avec le max de vitesse v qui est un point d'inflection. $\lambda/H = 3$. Condition : point d'inflection $<0.6 z_i$. instabilité très faible dans une CLA turbulente. 
-	
- \item \textbf{instabilité parallèles} Seulement dans écoulement rotatif. Rouleaux plus étendu $\lambda/H = 6$.
-	
-\item \textbf{instabilité thermique}: Cause principale de l'apparition de tourbillon en rouleaux. Convection de Rayleigh Bénard. Explique pk rolls surtout observés au dessus de la mer pendant CAO et au dessus de la terre durant la journée.
-\end{itemize}
+\section{Différents types d'instabilités: } 
 
-Mais aussi une importance de l'évaporation et sublimation (evaportative cooling) (\cite{riviereDownwardTransportMomentum2020}). 
+
 
 
 \subsection{Paramètre $\zeta$ ou nombre de Richardson}

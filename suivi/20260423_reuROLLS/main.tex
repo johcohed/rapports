@@ -1,0 +1,173 @@
+\input{../beamer_settings.tex}
+\usepackage[style=authoryear, backend=biber]{biblatex}
+\addbibresource{groupeThese.bib}
+\graphicspath{{FIGURES/}}
+
+%Title Page
+\title{Discussion Rouleaux Mercredi 22/04/2026}
+\author{}
+
+\usepackage[caption = false]{subfig}
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{But de la réu :}
+  \begin{itemize}
+    \item Présenter ma méthode et questionnements
+    \item Échange d'idées ? venant de vos expériences pour débloquer et/ou détecter fausses routes 
+  \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Quels processus physiques derrières les rouleaux?}
+Différentes instabilités (\cite{etlingRollVorticesPlanetary1993}):
+\begin{itemize}
+	\item Instabilité point d'inflection (theorème de Rayleigh, Brown 1980)
+	\item Instabilité parallèles, pour un fluide en rotation 
+	\item \textbf{Instabilité thermique} 
+\end{itemize}
+
+Des porcessus ont surement une influence: \\
+evaporation et sublimation (\cite{riviereDownwardTransportMomentum2020}) ;  hétérogénéités de surface (\cite{gryschkaInfluenceSeaiceInhomogeneities2008})
+
+\end{frame}
+
+\begin{frame}{Quelle question scientifique ?}
+	\begin{itemize}
+		\item Comprendre les processus qui mène à la formation de rouleaux, quelles instabilité ? 
+		\item Rôle dans le transport de quantité de mouvement, humidité et chaleur ?  \\
+		Dans les CAO rôle possiblement négligeable (\cite{gryschkaImpactForcedRoll2014})
+		\item Vents forts : problématique des flux de surfaces, possibilité de liens entre les flux de surface et la géométrie des rouleaux ?  \cite{lfarhImpactSurfaceTurbulent2024}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Quelle méthode pour étudier les rouleaux?}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\linewidth]{methode/methode}
+		\caption{}
+		\label{fig:methode}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Quels diagnostiques sont faits ?}
+	\begin{itemize}
+		\item \textbf{Hauteur de couche limite} diagnostique online \\
+		Choix sur la KE, si $< 5\%$ de la KE au dessous ? \\
+		
+		Alternatives sont : sur le gradient de température / sur évolution TKE / flux wthv
+		
+		\item \textbf{Longueur de Moonin Obhukov} online:\\
+		
+		\item Paramètre de stabilité $\zeta = z_i / L$\\
+		$6 < \zeta < 15$ (\cite{etlingRollVorticesPlanetary1993}) dans le cas d'instabilité thermique\\	
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Simulation ADRIAN\_3D - large domain}
+	\begin{figure}
+		\centering
+		\includegraphics[width=1\linewidth]{FIGURES/methode/simu1}
+	\end{figure}
+\end{frame}
+
+
+
+
+
+\begin{frame}{Evolution}
+	\centering
+	\includegraphics[width=0.95\linewidth]{WAHIBAsimu/Evolution_resol}
+\end{frame}
+
+
+
+%\begin{frame}%
+%	\centering
+%	\includegraphics[width=0.8\linewidth]{WAHIBAsimu/Profil_EVolutions}
+%\end{frame}
+
+\begin{frame}{ACF  $R(\delta x) = \langle W(x+\delta x) \times W(x) \rangle$}
+	\begin{minipage}{0.45\textwidth}
+	\centering
+		\includegraphics[width=0.8\linewidth]{WAHIBAsimu/acfNONORM.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth} 
+	\centering
+	\includegraphics[width=1\linewidth]{WAHIBAsimu/acfNONORM_slice.png}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{Simulation ADRIAN\_3D}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\multirow{4}{*}{\rotatebox{90}{Prep ideal}} 
+			& Domain size & \hl{5 x 5} x 1.6 km \\
+			& discretization & $dx = dy = 50m$\\
+			&  & $ 10m \leq dz \leq 20m$ \\
+			& Boundaries & 2* cyclic, no slip \\
+			\hline \hline
+			\multirow{6}{*}{\rotatebox{90}{mesonh}} 
+			& Schemes & TKEL, PPM\\ 
+			& Mixing length & DEARDOFF \\
+			& Integrat° step & 0.5 s \\
+			& Integrat° length & 5000 s \\
+			& Advection & CEN4TH \\
+			& Temporal  & RK4 \\
+			& Relaxation & $\bar U$,$\bar V$, $\bar \Theta$ \\
+			& $\tau^{relax}$ & \hl{60 s}\\
+			\hline \hline
+			\multirow{3}{*}{\rotatebox{90}{profiles}} 
+			& $\theta_g$ & 291K\\
+			& sst  & 295 K\\
+			\hline
+		\end{tabular}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth} 
+		\centering
+		\includegraphics[width=1\linewidth]{methode/input.png}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Coupe verticale}
+	\centering
+\includegraphics[width=1\linewidth]{smallSIMU/slice_t75_0.png}
+\end{frame}
+
+
+\begin{frame}{Comparaison plusieurs sst}
+	\centering
+	\includegraphics[width=1\linewidth]{smallSIMU/comp_cut_WT_level_16_t75.png}
+\end{frame}
+
+\begin{frame}{Evolution}
+\centering
+\includegraphics[width=1\linewidth]{smallSIMU/evol.png}
+\end{frame}
+
+\begin{frame}{Evolution}
+	\centering
+	\includegraphics[width=1\linewidth]{smallSIMU/corr_t75_cutWTpert_16.png}
+\end{frame}
+
+\begin{frame}
+	\centering
+	\includegraphics[width=0.5\linewidth]{smallSIMU/corr_slice_t75_WTpert_16.png}
+\end{frame}
+
+
+\begin{frame}{Quelles limites et pb ? }
+\printbibliography
+\end{frame}
+
+\end{document}   

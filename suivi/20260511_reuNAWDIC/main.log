@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.1)  6 MAY 2026 23:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.9.1)  5 JUN 2026 17:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1252,26 +1252,18 @@ Package: ocgbase 2022/08/04 v0.22 support package for ocgx2.sty
 \@anim@curfield=\count531
 \@anim@@resizeflags=\count532
 )
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/multimedia.sty
-Package: multimedia 2012/05/02 ver 0.02
-
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
-Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-)
-\mm@movie=\count533
-)
 (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count534
+\c@KVtest=\count533
 \sf@farskip=\skip96
 \sf@captopadj=\dimen353
 \sf@capskip=\skip97
 \sf@nearskip=\skip98
-\c@subfigure=\count535
-\c@subfigure@save=\count536
-\c@depth=\count537
-\c@subtable=\count538
-\c@subtable@save=\count539
+\c@subfigure=\count534
+\c@subfigure@save=\count535
+\c@depth=\count536
+\c@subtable=\count537
+\c@subtable@save=\count538
 \sf@top=\skip99
 \sf@bottom=\skip100
 )
@@ -1281,27 +1273,48 @@ Package csquotes Info: ... none found.
 
 LaTeX Warning: Label `fig:aeris1630' multiply defined.
 
+
+LaTeX Warning: Label `fig:aeris1630' multiply defined.
+
+
+LaTeX Warning: Label `fig:aeris1630' multiply defined.
+
+
+LaTeX Warning: Label `fig:aeris1630' multiply defined.
+
+
+LaTeX Warning: Label `fig:aeris1630' multiply defined.
+
+
+LaTeX Warning: Label `fig:aeris1630' multiply defined.
+
+
+LaTeX Warning: Label `fig:figrastaleg5' multiply defined.
+
+
+LaTeX Warning: Label `fig:figrastaleg5' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1339,16 +1352,16 @@ LaTeX Font Info:    ... okay on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count540
+\scratchcounter=\count539
 \scratchdimen=\dimen354
 \scratchbox=\box89
-\nofMPsegments=\count541
-\nofMParguments=\count542
+\nofMPsegments=\count540
+\nofMParguments=\count541
 \everyMPshowfont=\toks60
-\MPscratchCnt=\count543
+\MPscratchCnt=\count542
 \MPscratchDim=\dimen355
-\MPnumerator=\count544
-\makeMPintoPDFobject=\count545
+\MPnumerator=\count543
+\makeMPintoPDFobject=\count544
 \everyMPtoPDFconversion=\toks61
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1359,64 +1372,64 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 14.
+Package hyperref Info: Link coloring OFF on input line 16.
 
 (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 14.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 16.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 14.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 16.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 14.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 14.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 14.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 14.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 16.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 14.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 14.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 14.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 16.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 14.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 14.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 14.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 16.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 14.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 14.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 16.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 14.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 16.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 14.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 14.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 14.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 14.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 14.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 14.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 14.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 16.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 16.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
-4.
+6.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 1
-4.
+6.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 14.
+ut line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1459,70 +1472,249 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 14.
-Package biblatex Info: Reference segment=0 on input line 14.
+Package biblatex Info: Reference section=0 on input line 16.
+Package biblatex Info: Reference segment=0 on input line 16.
 (./main.nav)
-<FIGURES/LAERO-logo.jpg, id=34, 128.1588pt x 175.1343pt>
+<FIGURES/LAERO-logo.jpg, id=33, 128.1588pt x 175.1343pt>
 File: FIGURES/LAERO-logo.jpg Graphic file (type jpg)
 <use FIGURES/LAERO-logo.jpg>
-Package pdftex.def Info: FIGURES/LAERO-logo.jpg  used on input line 17.
-(pdftex.def)             Requested size: 41.64133pt x 56.9055pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+Package pdftex.def Info: FIGURES/LAERO-logo.jpg  used on input line 19.
+(pdftex.def)             Requested size: 31.23001pt x 42.67912pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
 
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 17.
+ut line 19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<FIGURES/UNIV-logo.png, id=35, 2569.6pt x 676.5275pt>
+<FIGURES/UNIV-logo.png, id=34, 2569.6pt x 676.5275pt>
 File: FIGURES/UNIV-logo.png Graphic file (type png)
 <use FIGURES/UNIV-logo.png>
-Package pdftex.def Info: FIGURES/UNIV-logo.png  used on input line 17.
-(pdftex.def)             Requested size: 108.0597pt x 28.45274pt.
+Package pdftex.def Info: FIGURES/UNIV-logo.png  used on input line 19.
+(pdftex.def)             Requested size: 86.4556pt x 22.76228pt.
+<FIGURES/CNRS-logo.jpeg, id=35, 475.7775pt x 266.9975pt>
+File: FIGURES/CNRS-logo.jpeg Graphic file (type jpg)
+<use FIGURES/CNRS-logo.jpeg>
+Package pdftex.def Info: FIGURES/CNRS-logo.jpeg  used on input line 19.
+(pdftex.def)             Requested size: 50.69498pt x 28.45274pt.
+<FIGURES/logo-IRD.png, id=36, 207.8967pt x 171.039pt>
+File: FIGURES/logo-IRD.png Graphic file (type png)
+<use FIGURES/logo-IRD.png>
+Package pdftex.def Info: FIGURES/logo-IRD.png  used on input line 19.
+(pdftex.def)             Requested size: 34.5838pt x 28.45274pt.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <./FIGURES/LAERO-logo.jpg> <./FIGURES/UNIV-logo.png>] [2
+ <./FIGURES/LAERO-logo.jpg> <./FIGURES/UNIV-logo.png> <./FIGURES/CNRS-logo.jpeg
+> <./FIGURES/logo-IRD.png>] [2
 
 ]
-<FIGURES/AERIS.png, id=106, 563.10374pt x 251.43938pt>
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+
+ []
+
+
+Overfull \hbox (39.41783pt too wide) in paragraph at lines 64--64
+[] 
+ []
+
+<FIGURES/AERIS.png, id=113, 563.10374pt x 251.43938pt>
 File: FIGURES/AERIS.png Graphic file (type png)
 <use FIGURES/AERIS.png>
-Package pdftex.def Info: FIGURES/AERIS.png  used on input line 58.
+Package pdftex.def Info: FIGURES/AERIS.png  used on input line 64.
 (pdftex.def)             Requested size: 260.00905pt x 116.10089pt.
- [3
+[3
 
+ <./FIGURES/AERIS.png>]
+<FIGURES/sar.png, id=145, 574.39594pt x 480.29437pt>
+File: FIGURES/sar.png Graphic file (type png)
+<use FIGURES/sar.png>
+Package pdftex.def Info: FIGURES/sar.png  used on input line 89.
+(pdftex.def)             Requested size: 234.00655pt x 195.66875pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:aeris1630
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.58 \end{frame}
-                 <./FIGURES/AERIS.png>]
-<FIGURES/sar.png, id=142, 590.205pt x 212.29312pt>
-File: FIGURES/sar.png Graphic file (type png)
-<use FIGURES/sar.png>
-Package pdftex.def Info: FIGURES/sar.png  used on input line 79.
-(pdftex.def)             Requested size: 238.34053pt x 85.7288pt.
-<FIGURES/zoomRASTA.png, id=143, 473.51906pt x 169.38281pt>
-File: FIGURES/zoomRASTA.png Graphic file (type png)
-<use FIGURES/zoomRASTA.png>
-Package pdftex.def Info: FIGURES/zoomRASTA.png  used on input line 79.
-(pdftex.def)             Requested size: 238.34053pt x 85.2572pt.
- [4
+<to be read again> 
+                   \relax 
+l.89 \end{frame}
+                
+Overfull \vbox (6.28862pt too high) detected at line 89
+ []
 
- <./FIGURES/sar.png> <./FIGURES/zoomRASTA.png>] [5
+[4
+
+ <./FIGURES/sar.png>]
+<FIGURES/RASTA_edit.png, id=176, 582.67688pt x 324.46219pt>
+File: FIGURES/RASTA_edit.png Graphic file (type png)
+<use FIGURES/RASTA_edit.png>
+Package pdftex.def Info: FIGURES/RASTA_edit.png  used on input line 99.
+(pdftex.def)             Requested size: 325.00801pt x 180.98465pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:aeris1630
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.99 \end{frame}
+                
+Overfull \vbox (15.3337pt too high) detected at line 99
+ []
+
+[5
+
+ <./FIGURES/RASTA_edit.png>]
+<FIGURES/RastaVZALL.png, id=206, 1200.1638pt x 551.1792pt>
+File: FIGURES/RastaVZALL.png Graphic file (type png)
+<use FIGURES/RastaVZALL.png>
+Package pdftex.def Info: FIGURES/RastaVZALL.png  used on input line 113.
+(pdftex.def)             Requested size: 346.67653pt x 159.20709pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:aeris1630
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.113 \end{frame}
+                  [6
+
+ <./FIGURES/RastaVZALL.png>]
+<FIGURES/RastaVZL5.png, id=236, 1215.0996pt x 551.1792pt>
+File: FIGURES/RastaVZL5.png Graphic file (type png)
+<use FIGURES/RastaVZL5.png>
+Package pdftex.def Info: FIGURES/RastaVZL5.png  used on input line 126.
+(pdftex.def)             Requested size: 346.67653pt x 157.2475pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:aeris1630
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.126 \end{frame}
+                  [7
+
+ <./FIGURES/RastaVZL5.png>]
+<FIGURES/RastaVZL7.png, id=267, 1215.0996pt x 551.1792pt>
+File: FIGURES/RastaVZL7.png Graphic file (type png)
+<use FIGURES/RastaVZL7.png>
+Package pdftex.def Info: FIGURES/RastaVZL7.png  used on input line 138.
+(pdftex.def)             Requested size: 346.67653pt x 157.2475pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:aeris1630
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 \end{frame}
+                  [8
+
+ <./FIGURES/RastaVZL7.png>]
+<FIGURES/figRASTAleg5.png, id=298, 421.69545pt x 285.82785pt>
+File: FIGURES/figRASTAleg5.png Graphic file (type png)
+<use FIGURES/figRASTAleg5.png>
+Package pdftex.def Info: FIGURES/figRASTAleg5.png  used on input line 165.
+(pdftex.def)             Requested size: 166.83763pt x 113.08176pt.
+<FIGURES/frames/frame-0.png, id=299, 573.14125pt x 849.1725pt>
+File: FIGURES/frames/frame-0.png Graphic file (type png)
+<use FIGURES/frames/frame-0.png>
+Package pdftex.def Info: FIGURES/frames/frame-0.png  used on input line 165.
+(pdftex.def)             Requested size: 573.13985pt x 849.17043pt.
+ <./FIGURES/frames/frame-0.png>
+<a0,fr0>
+<FIGURES/frames/frame-1.png, id=303, 573.14125pt x 849.1725pt>
+File: FIGURES/frames/frame-1.png Graphic file (type png)
+<use FIGURES/frames/frame-1.png>
+Package pdftex.def Info: FIGURES/frames/frame-1.png  used on input line 165.
+(pdftex.def)             Requested size: 573.13985pt x 849.17043pt.
+ <./FIGURES/frames/frame-1.png> <a0,fr1>
+<FIGURES/frames/frame-2.png, id=307, 573.14125pt x 849.1725pt>
+File: FIGURES/frames/frame-2.png Graphic file (type png)
+<use FIGURES/frames/frame-2.png>
+Package pdftex.def Info: FIGURES/frames/frame-2.png  used on input line 165.
+(pdftex.def)             Requested size: 573.13985pt x 849.17043pt.
+ <./FIGURES/frames/frame-2.png> <a0,fr2>
+<FIGURES/frames/frame-3.png, id=311, 573.14125pt x 849.1725pt>
+File: FIGURES/frames/frame-3.png Graphic file (type png)
+<use FIGURES/frames/frame-3.png>
+Package pdftex.def Info: FIGURES/frames/frame-3.png  used on input line 165.
+(pdftex.def)             Requested size: 573.13985pt x 849.17043pt.
+ <./FIGURES/frames/frame-3.png> <a0,fr3>
+<FIGURES/frames/frame-4.png, id=315, 573.14125pt x 849.1725pt>
+File: FIGURES/frames/frame-4.png Graphic file (type png)
+<use FIGURES/frames/frame-4.png>
+Package pdftex.def Info: FIGURES/frames/frame-4.png  used on input line 165.
+(pdftex.def)             Requested size: 573.13985pt x 849.17043pt.
+ <./FIGURES/frames/frame-4.png> <a0,fr4>
+<FIGURES/frames/frame-5.png, id=319, 573.14125pt x 849.1725pt>
+File: FIGURES/frames/frame-5.png Graphic file (type png)
+<use FIGURES/frames/frame-5.png>
+Package pdftex.def Info: FIGURES/frames/frame-5.png  used on input line 165.
+(pdftex.def)             Requested size: 573.13985pt x 849.17043pt.
+ <./FIGURES/frames/frame-5.png> <a0,fr5>
+<FIGURES/frames/frame-6.png, id=323, 573.14125pt x 849.1725pt>
+File: FIGURES/frames/frame-6.png Graphic file (type png)
+<use FIGURES/frames/frame-6.png>
+Package pdftex.def Info: FIGURES/frames/frame-6.png  used on input line 165.
+(pdftex.def)             Requested size: 573.13985pt x 849.17043pt.
+ <./FIGURES/frames/frame-6.png> <a0,fr6>
+<FIGURES/frames/frame-7.png, id=327, 573.14125pt x 849.1725pt>
+File: FIGURES/frames/frame-7.png Graphic file (type png)
+<use FIGURES/frames/frame-7.png>
+Package pdftex.def Info: FIGURES/frames/frame-7.png  used on input line 165.
+(pdftex.def)             Requested size: 573.13985pt x 849.17043pt.
+ <./FIGURES/frames/frame-7.png> <a0,fr7>
+<FIGURES/frames/frame-8.png, id=331, 573.14125pt x 849.1725pt>
+File: FIGURES/frames/frame-8.png Graphic file (type png)
+<use FIGURES/frames/frame-8.png>
+Package pdftex.def Info: FIGURES/frames/frame-8.png  used on input line 165.
+(pdftex.def)             Requested size: 573.13985pt x 849.17043pt.
+ <./FIGURES/frames/frame-8.png> <a0,fr8>
+pdfTeX warning (ext4): destination with the same identifier (name{fig:aeris1630
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.165 \end{frame}
+                  [9
+
+ <./FIGURES/figRASTAleg5.png>]
+<FIGURES/MNH/DOMAIN_UT_lev148.png, id=380, 652.3572pt x 721.7364pt>
+File: FIGURES/MNH/DOMAIN_UT_lev148.png Graphic file (type png)
+<use FIGURES/MNH/DOMAIN_UT_lev148.png>
+Package pdftex.def Info: FIGURES/MNH/DOMAIN_UT_lev148.png  used on input line 1
+91.
+(pdftex.def)             Requested size: 151.67305pt x 167.80197pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:figrastal
+eg5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.191 \end{frame}
+                 
+<FIGURES/MNH/analyse_wind.png, id=381, 867.24pt x 867.24pt>
+File: FIGURES/MNH/analyse_wind.png Graphic file (type png)
+<use FIGURES/MNH/analyse_wind.png>
+Package pdftex.def Info: FIGURES/MNH/analyse_wind.png  used on input line 191.
+(pdftex.def)             Requested size: 190.67314pt x 190.66106pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:figrastal
+eg5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.191 \end{frame}
+                 
+Overfull \vbox (1.28093pt too high) detected at line 191
+ []
+
+[10
+
+ <./FIGURES/MNH/DOMAIN_UT_lev148.png> <./FIGURES/MNH/analyse_wind.png>]
+[11
 
 ]
 \tf@nav=\write8
@@ -1558,26 +1750,36 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36556 strings out of 474222
- 729611 string characters out of 5748734
- 1937975 words of memory out of 5000000
- 58138 multiletter control sequences out of 15000+600000
- 565732 words of font info for 63 fonts, out of 8000000 for 9000
+ 36695 strings out of 474222
+ 733769 string characters out of 5748734
+ 1939975 words of memory out of 5000000
+ 58261 multiletter control sequences out of 15000+600000
+ 568719 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,15n,126p,1729b,1148s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 133i,15n,126p,1881b,1144s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{cite.0@lfarhImpactSurfaceTurbulent2024} has been re
+ferenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@riviereDownwardTransportMomentum2020} has be
+en referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@etlingRollVorticesPlanetary1993} has been re
 ferenced but does not exist, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on main.pdf (5 pages, 1089342 bytes).
+dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmssi9.pfb>
+Output written on main.pdf (11 pages, 4268349 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 13 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 477 PDF objects out of 1000 (max. 8388607)
+ 364 compressed objects within 4 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 285 words of extra memory for PDF output out of 10000 (max. 10000000)
 

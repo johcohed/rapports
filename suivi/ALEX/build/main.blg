@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'build/main.blg'
+[97] biber:340> INFO - === mer. janv. 21, 2026, 10:47:06
+[117] Biber.pm:419> INFO - Reading 'build/main.bcf'
+[193] Biber.pm:979> INFO - Found 4 citekeys in bib section 0
+[209] Biber.pm:4419> INFO - Processing section 0
+[222] Biber.pm:4610> INFO - Looking for bibtex file 'Rolls.bib' for section 0
+[234] bibtex.pm:1713> INFO - LaTeX decoding ...
+[335] bibtex.pm:1519> INFO - Found BibTeX data source 'Rolls.bib'
+[406] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[406] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[406] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[406] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[416] bbl.pm:660> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[419] bbl.pm:763> INFO - Output to build/main.bbl

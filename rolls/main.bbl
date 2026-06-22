@@ -365,63 +365,53 @@
       \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023JD040191
       \endverb
     \endentry
-    \entry{liuAnalyticalModelRoll2009}{article}{}
+    \entry{marongaLargeEddySimulationsSurface2012}{article}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=532ca3cfbebbe8fb531796f116d18df3}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Huizhi},
-           giveni={H\bibinitperiod},
+        {{un=0,uniquepart=base,hash=5ebb03d3306a30adb826b84b7baae21e}{%
+           family={Maronga},
+           familyi={M\bibinitperiod},
+           given={Björn},
+           giveni={B\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=e6da02fb75ac36e036a31a13b3af4b28}{%
-           family={Sang},
-           familyi={S\bibinitperiod},
-           given={Jianguo},
-           giveni={J\bibinitperiod},
+        {{un=0,uniquepart=base,hash=2c487e81ffbab0e773b85eb163573b1b}{%
+           family={Raasch},
+           familyi={R\bibinitperiod},
+           given={Siegfried},
+           giveni={S\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{8567f9e8a55db820c62cb742529a9a84}
-      \strng{fullhash}{8567f9e8a55db820c62cb742529a9a84}
-      \strng{bibnamehash}{8567f9e8a55db820c62cb742529a9a84}
-      \strng{authorbibnamehash}{8567f9e8a55db820c62cb742529a9a84}
-      \strng{authornamehash}{8567f9e8a55db820c62cb742529a9a84}
-      \strng{authorfullhash}{8567f9e8a55db820c62cb742529a9a84}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \strng{namehash}{038c2ba01449c9a3c4b8e701e20ca161}
+      \strng{fullhash}{038c2ba01449c9a3c4b8e701e20ca161}
+      \strng{bibnamehash}{038c2ba01449c9a3c4b8e701e20ca161}
+      \strng{authorbibnamehash}{038c2ba01449c9a3c4b8e701e20ca161}
+      \strng{authornamehash}{038c2ba01449c9a3c4b8e701e20ca161}
+      \strng{authorfullhash}{038c2ba01449c9a3c4b8e701e20ca161}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Analytical solutions of convective waves in the convective boundary layer (CBL) were obtained with two-layer linearized atmospheric equations including Rayleigh friction, which represents the turbulent viscosity in the lower CBL. The analytical model shows that the interaction between the convection in the lower layer and gravity waves in the upper layer is one of the causes for the formation of convective bands. The flow and temperature fields obtained by the analytical model present the main characteristics of convective bands found in field observations. We have also investigated the influences of atmospheric conditions on the characteristics of the bands. Results accord with previous knowledge about these phenomena.}
-      \field{issn}{0006-8314, 1573-1472}
       \field{journaltitle}{Boundary-Layer Meteorology}
-      \field{langid}{english}
-      \field{month}{1}
-      \field{number}{1}
-      \field{shortjournal}{Boundary-Layer Meteorol}
-      \field{title}{Analytical {{Model}} of {{Roll Vortices}} in the {{Convective Boundary Layer}}}
-      \field{urlday}{22}
-      \field{urlmonth}{9}
-      \field{urlyear}{2025}
-      \field{volume}{130}
-      \field{year}{2009}
+      \field{title}{Large-{{Eddy Simulations}} of {{Surface Heterogeneity Effects}} on the {{Convective Boundary Layer During}} the {{LITFASS-2003 Experiment}}}
+      \field{urlday}{19}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2012}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \field{pages}{43\bibrangedash 55}
-      \range{pages}{13}
       \verb{doi}
-      \verb 10.1007/s10546-008-9335-5
+      \verb 10.1007/s10546-012-9748-z
       \endverb
       \verb{file}
-      \verb /home/johanhedman/Zotero/storage/35SW6WS7/Liu et Sang - 2009 - Analytical Model of Roll Vortices in the Convective Boundary Layer.pdf
+      \verb /home/johanhedman/Zotero/storage/WDXHC6ZC/Maronga et Raasch - 2012 - Large-Eddy Simulations of Surface Heterogeneity Effects on the Convective Boundary Layer During the.pdf
       \endverb
       \verb{urlraw}
-      \verb http://link.springer.com/10.1007/s10546-008-9335-5
+      \verb https://sci-hub.fr/10.1007/s10546-012-9748-z
       \endverb
       \verb{url}
-      \verb http://link.springer.com/10.1007/s10546-008-9335-5
+      \verb https://sci-hub.fr/10.1007/s10546-012-9748-z
       \endverb
-      \keyw{stability}
     \endentry
     \entry{nakanishiLargeEddySimulationRoll2012}{article}{}
       \name{author}{2}{}{%
@@ -544,6 +534,69 @@
       \verb https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3767
       \endverb
       \keyw{evaporation,ideal,modelling,stingjet}
+    \endentry
+    \entry{weckwerthObservationalStudyEvolution1999}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4f087e9f5d81854749bc6ef34e0458e3}{%
+           family={Weckwerth},
+           familyi={W\bibinitperiod},
+           given={Tammy\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b169b6c7d06a6b16f5f913de8550fa8}{%
+           family={Horst},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima W.},
+           giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc49a7f351847cb4dfc4cdf91a84e847}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={James\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6c6feb234cbfd181c7a6412056adb762}
+      \strng{fullhash}{6c6feb234cbfd181c7a6412056adb762}
+      \strng{bibnamehash}{6c6feb234cbfd181c7a6412056adb762}
+      \strng{authorbibnamehash}{6c6feb234cbfd181c7a6412056adb762}
+      \strng{authornamehash}{6c6feb234cbfd181c7a6412056adb762}
+      \strng{authorfullhash}{6c6feb234cbfd181c7a6412056adb762}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A comprehensive observational dataset encompassing the entire temporal evolution of horizontal convective rolls was obtained for the first time. Florida, Illinois, and Kansas measurements from preroll conditions through the development of well-defined rolls to their dissipation were utilized to determine the factors influencing roll evolution. When the buoyancy flux reached a critical value of 35–50 W m22, the first form of boundary layer convection resolved by radar was rolls. It was noted that two-dimensional convective rolls can evolve in a convective boundary layer in the absence of significant wind speed and shear. In fact, the value of wind speed or shear in itself did not seem to determine when or if rolls would form, although it did influence roll evolution. Well-defined, two-dimensional rolls only occurred while 2zi/L, where zi is the convective boundary layer depth and L is the Monin–Obukhov length, was less than ;25, which is consistent with previous studies. As 2zi/L increased throughout the day, either open cellular convection or unorganized boundary layer convection was the dominant clear-air convective mode. If the wind speed was low (mean boundary layer winds ,3 m s21 or 10-m winds ,2 m s21) during roll occurrences, rolls evolved into open cells. Alternatively, if the wind speed throughout the day was relatively high, rolls broke apart into random, unorganized convective elements. These are unprecedented observations of two-dimensional convection evolving into three-dimensional convection over land, which is analogous to laboratory convection where increased thermal forcing can produce a transition from two-dimensional to three-dimensional structures. Finally, the roll orientation was governed primarily by the mean convective boundary layer wind direction.}
+      \field{issn}{0027-0644, 1520-0493}
+      \field{journaltitle}{Monthly Weather Review}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shortjournal}{Mon. Wea. Rev.}
+      \field{title}{An {{Observational Study}} of the {{Evolution}} of {{Horizontal Convective Rolls}}}
+      \field{urlday}{16}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{127}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2160\bibrangedash 2179}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1175/1520-0493(1999)127<2160:AOSOTE>2.0.CO;2
+      \endverb
+      \verb{file}
+      \verb /home/johanhedman/Zotero/storage/QQDDLA5M/Weckwerth et al. - 1999 - An Observational Study of the Evolution of Horizontal Convective Rolls.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.ametsoc.org/doi/10.1175/1520-0493(1999)127<2160:AOSOTE>2.0.CO;2
+      \endverb
+      \verb{url}
+      \verb http://journals.ametsoc.org/doi/10.1175/1520-0493(1999)127%3C2160:AOSOTE%3E2.0.CO;2
+      \endverb
     \endentry
     \entry{youngSupplementRollsStreets2002}{article}{}
       \name{author}{4}{}{%

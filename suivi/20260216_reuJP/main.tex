@@ -43,11 +43,11 @@ Ce qu'on avait dit
                & Advection & CEN4TH \\
                & Temporal  & RK4 \\
                & Relaxation & $\bar U$,$\bar V$,$\bar W$, $\bar \Theta$ \\
-               & $\tau^{relax} & 2000 s\\
+               & $\tau^{relax}$ & 2000 s\\
      \hline \hline
     \multirow{3}{*}{\rotatebox{90}{profiles}} 
                & $\theta_g$ & 291K\\
-               & sst  & $ 295 K$\\
+               & sst  & 295 K\\
                \hline
   \end{tabular}
 \end{minipage}
@@ -62,105 +62,59 @@ Ce qu'on avait dit
 % --------------------------------------------
 % -- Evolution --
 % --------------------------------------------
-\begin{frame}
-Pour un rappel fort ($\tau = 20 s$): maintient du vent mais dvp de la couche limite quand même. $\zeta \approx 0.6$ \\
-\includegraphics[width=0.8\textwidth]{evol_strong_meanNUDGE.png}
+\begin{frame}{Dépendance à la taille du domaine}
+\includegraphics[width=0.8\textwidth]{coor_datalist_UT_15_30.png}
+\end{frame}
+
+\begin{frame}{Autocorr de différentes var prognostiques}
+Domaine $10x10$ km avec $dx=50m$
+\includegraphics[width=1\textwidth]{slice_data50_10km.png}
+\end{frame}
+
+\begin{frame}{Autocorr de différentes var prognostiques}
+Domaine $5x5$ km avec $dx=50m$
+\includegraphics[width=1\textwidth]{slice_data50_5km.png}
+\end{frame}
+
+\begin{frame}{Dépendance à la taille du domaine}
+\includegraphics[width=0.8\textwidth]{coor_datalist_UT_30_35.png}
+\end{frame}
+
+\begin{frame}{Turbulence, domain 10x10km}
+  \includegraphics[width=0.8\textwidth]{turb-1.png}
 \end{frame}
 
 \begin{frame}
-Pour un rappel - fort ($\tau = 200 s$): relatif maintient du vent mais dvp de la couche limite quand même. $\zeta \approx 0.6$ \\
-\includegraphics[width=0.8\textwidth]{evol_weak_meanNUDGE.png}
+  \includegraphics[width=0.8\textwidth]{turb-2.png}
 \end{frame}
 
 \begin{frame}
-Pour un rappel - fort ($\tau = 1000 s$): perte du max de vent, vent moyen augmente proche surface; $\zeta >0.6$ (+ proche de Lfahr)\\
-\includegraphics[width=0.8\textwidth]{evol_veryweak_meanNUDGE.png}
+  \includegraphics[width=0.8\textwidth]{turb-3.png}
 \end{frame}
 
 \begin{frame}
-Mean and variance de U and W wind speeds. \\
-\begin{figure}
-  \begin{minipage}{0.31\textwidth}
-	\centering
-  \includegraphics[width=1\textwidth]{prof_veryweak_meanNUDGE.png}
-  \end{minipage}
-  \begin{minipage}{0.31\textwidth}
-  \includegraphics[width=1\textwidth]{prof_weak_meanNUDGE.png}
-  \end{minipage}
-  \begin{minipage}{0.31\textwidth}
-  \includegraphics[width=1\textwidth]{prof_strong_meanNUDGE.png}
-  \end{minipage}
-  \caption{$\tau=1000, 200, 20s$}
-\end{figure}
+  \includegraphics[width=0.8\textwidth]{turb-4.png}
 \end{frame}
-
-
-% ------------------------------
-%             cuts
-% ------------------------------
 \begin{frame}
-Coupes horizontales : dvp de structure en rouleaux pour rappel plus faible, angle $\epsilon$ plus important aussi
-\begin{figure}
-\begin{minipage}{0.31\textwidth}
-	\centering
-    \includegraphics[width=1\textwidth]{horiz_veryweak.png}
-\end{minipage}
-\begin{minipage}{0.31\textwidth}
-	\centering
-    \includegraphics[width=1\textwidth]{horiz_weak.png}
-\end{minipage}
-\begin{minipage}{0.31\textwidth}
-	\centering
-    \includegraphics[width=1\textwidth]{horiz_strong.png}
-\end{minipage}
-  \caption{$\tau=1000, 200, 20s$}
-\end{figure}
-\end{frame}
+  \begin{itemize}
+    \item Avancée de thèse :
+  \begin{itemize}
+    \item Simulation en cas idéalisé de rouleaux dans le cas de la tempête Adrian (mise en pause durant NAWDIC). 
+    \item Début état de l'art sur les rouleaux, essayer de dégager une problématique? 
+  \end{itemize}
+
+\item Méthode: \\
+  Simulation de rouleaux dans un cas idéalisé en utilisant MesoNH. 
+
+\item Objectif du mois: \\
+  \begin{itemize}
+    \item Chercher une problématique précise puis chercher une méthode
+    \item Réfléchir à alternatives/compléments aux simulations LES
+    \item Chercher à m'intégrer dans NAWDIC ?  
+   \end{itemize}
+  \end{itemize}
 
 
-
-\begin{frame}
-\begin{figure}
-  \begin{minipage}{0.2\textwidth}
-	\centering
-  \includegraphics[width=1\textwidth]{prof_veryveryweak_meanNUDGE.png}
-  \end{minipage}
-  \begin{minipage}{0.31\textwidth}
-  \includegraphics[width=1\textwidth]{cut_veryveryweak.png}
-  \end{minipage}
-  \begin{minipage}{0.31\textwidth}
-  \includegraphics[width=1\textwidth]{prof_strong_meanNUDGE.png}
-  \end{minipage}
-  \caption{$\tau=1000, 200, 20s$}
-\end{figure}
 \end{frame}
-% -------------------------------------------
-%   structure
-% ---------------------------------------------
-\begin{frame}
-Etude des structure à $t=30min$
-\includegraphics[width=1\textwidth]{autocorr_t30.png}
-\end{frame}
-
-\begin{frame}
-Moyenne temporelle sur $t = [20,30]$ min
-\includegraphics[width=1\textwidth]{rolls_ni_100_tmin20_tmax30.png}
-\includegraphics[width=1\textwidth]{rolls_level_10_tmin20_tmax30.png}
-\end{frame}
-
-\begin{frame}
-Moyenne temporelle sur $t = [27,30]$ min : tps plus court mais flux plus stationnaires
-\includegraphics[width=1\textwidth]{rolls_ni_100_tmin27_tmax30.png}
-\includegraphics[width=1\textwidth]{rolls_level_10_tmin27_tmax30.png}
-\end{frame}
-
-\begin{frame}
-Moyenne temporelle sur $t = 35min$ level 15, $\tau=2000s$.
-\includegraphics[width=1\textwidth]{corr_image.png}
-\includegraphics[width=1\textwidth]{corr.png}
-\end{frame}
-% -------------------------------------------
-%   Adrian
-% ---------------------------------------------
 
 \end{document}   

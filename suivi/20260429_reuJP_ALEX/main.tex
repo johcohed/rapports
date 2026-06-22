@@ -1,0 +1,333 @@
+\input{../beamer_settings.tex}
+\addbibresource{../../groupeThese.bib}
+\graphicspath{{FIGURES/}}
+
+%Title Page
+\title{Réunion Mercredi 29/04/2026}
+\author{}
+
+\usepackage[caption = false]{subfig}
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Dernière discussion}
+Ce qu'on avait dit
+  \begin{itemize}
+    \item Problématique de diagnostique de BLH pouvait expliquer les rouleaux trop peu espacés dans le cas ADRIAN
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Cadre de la tempête Alex}
+\begin{minipage}{0.3\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{DOMAIN/WHOLEDOMAIN.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.65\textwidth} 
+  \centering
+  \includegraphics[width=\linewidth]{DOMAIN/rectprofiles.png}
+\end{minipage}
+Simulations LES à partir des profils moyens de : UT, VT, THT, RVT \\
+Les profils de UT, VT, RVT sont rappelés avec une constante de rappel $\tau = 60s$. 
+\end{frame}
+
+\begin{frame}{Zoom sur les profils de vents dans le domaine de référence}
+Recherche des points d'inflexion sur l'écoulement moyen perpendiculaire aux rouleaux, i.e. approx v (Weckwerth et al, 1996)
+	\begin{minipage}{0.8\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{DOMAIN/analyse_wind.png}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Comparaison dans domaine A}
+	\begin{minipage}{0.65\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{domA/comp_cut.png}
+		Dx(LES = 25m) !!\\
+				\begin{tabular}{c|cc}
+			&  LHF   & SHF \\
+			\hline
+			LES  & 363.81 &  \hl{42.09 }\\
+			ALEX & 394.27 & 220.64 \\
+		\end{tabular}
+	\end{minipage}
+	\hfill
+		\begin{minipage}{0.34\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{LESdomA/spectr.png}
+		\includegraphics[width=0.9\linewidth]{LESdomA/evol.png}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Comparaison dans domaine C}
+	\begin{minipage}{0.65\textwidth}
+		\centering
+		\includegraphics[width=0.8\linewidth]{domC/comp_cut.png}
+		\begin{tabular}{c|cc}
+			&  LHF   & SHF \\
+			\hline
+			LES  & 412.78 &  \hl{66.0}  \\
+			ALEX & 451.15 & 280.33 \\
+		\end{tabular} \\
+		\vspace{0.2cm}
+		Paramétrisation flux ECUME6 vs ECUME ?
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.34\textwidth}
+			\centering
+			\includegraphics[width=0.9\linewidth]{LESdomC/spectr.png}
+			\includegraphics[width=0.9\linewidth]{LESdomC/evol.png}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Discussion}
+	\begin{itemize}
+		\item SHF: problème ! \\
+		peut être paramétrisation ECUME - ECUME6 ? \\
+		Ou $\Delta \theta$ incorrect 
+		\item Spectre maoyenné sur altitude
+	\end{itemize}
+\end{frame}
+
+
+% =======================================================================================
+% =======================================================================================
+\section{SHF fluxes}
+\begin{frame}
+\sectionpage
+\vfill 
+Différence majeure entre LES idéalisée et ALEX cas réel = les flux de chaleur sensibles. \\
+\vfill
+Différentes pistes à explorer pour expliquer ces différences dans le cadre d'un flux paramétré par param bulk (\cite{lfarhImpactSurfaceTurbulent2024}).
+$$H_{bulk} = \rho c_p C_H U \Delta \theta $$ \\
+\end{frame}
+
+\subsection{Problème dans les flux}
+
+
+\subsection{Piste1: Choix de paramétrisation}
+\begin{frame}{Deux param différentes: ECUME et ECUME6}
+	ECUME (rouge) et ECUME6 (violet) sont des parazmétrisations issues de campagnes en mer. ECUME seulement avec des vents modérés et faibles. \\
+	\begin{minipage}{1\textwidth}
+		\centering
+		\includegraphics[width=0.7\linewidth]{FIGURES/ECUME.png}
+	\end{minipage}
+	\\
+	Différence des flux mais pas du même ordre de grandeurs !  
+\end{frame}
+
+\begin{frame}{Domaine C avec ECUME6 et ECUME}
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{domC/comp_cut.png}
+		\begin{tabular}{c|cc}
+			&  LHF   & SHF \\
+			\hline
+			LES  & 412.78 &  \hl{66.0}  \\
+			ALEX & 451.15 & 280.33 \\
+		\end{tabular} \\
+		\vspace{0.5cm}
+		ECUME6 dans la LES
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{domC_ECUME/comp_cut.png}
+		\begin{tabular}{c|cc}
+			&  LHF   & SHF \\
+			\hline
+			LES  & 384.86 &  \hl{95.67}  \\
+			ALEX & 451.15 & 280.33 \\
+		\end{tabular} \\
+		\vspace{0.5cm}
+		ECUME dans la LES
+	\end{minipage}
+\end{frame}
+
+
+
+\subsection{Piste2: Résolution verticale}
+\begin{frame}{Différence de résolution verticale}
+	\begin{minipage}{0.48\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{LESdomC/grille.png}
+\end{minipage}
+	\hfill
+\begin{minipage}{0.48\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{bigLESdomC/comp_cut.png}
+	\begin{tabular}{c|cc}
+		&  LHF   & SHF \\
+		\hline
+		LES  & 401.13 &  68.16  \\
+		ALEX & 451.15 & 280.33 \\
+	\end{tabular} \\
+	\vspace{0.5cm}
+\end{minipage}
+\end{frame}
+
+\subsection{Piste3: Différence de température de la première couche atmosphérique}
+\begin{frame}{Différence de température de la première couche atmosphérique}
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{diff/compTHT.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		REAL - LES \\
+		\centering
+		\includegraphics[width=0.7\linewidth]{diff/diffTHT.png}
+		\vspace{0.5cm}
+	\end{minipage}
+$theta_r > \theta_i \implies \Delta \theta_r > \Delta \theta_i \implies H_r > H_i $
+\end{frame}
+
+
+\subsection{Piste4: Différence de sst!}
+\begin{frame}{Différence de sst}
+	Je n'avais pas la même sst: car sst varie dans le domaine dans ALEX
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\begin{tabular}{|c|cc|}
+			\hline
+			LES &  SST  & 289.94  $\rightarrow $ 292.90 K \\
+				&  $\Theta$ & 288.55 K $\rightarrow$ 288.67 K\\
+				& $\Delta \Theta $ &  1.39  $\rightarrow$ 4.23K \\	
+			\hline
+			REAL &  SST  & 292.90 K \\
+			 		&  $\Theta$ & 289.39 K\\
+				& $\Delta \Theta $ &  3.52 K \\	
+			\hline
+		\end{tabular} \\
+				\vspace{0.5cm}
+	Grosse erreur dans les flux latents car pas de nudging de l'humidité ?
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{newSST/comp_cut.png}
+		\begin{tabular}{c|cc}
+			&  LHF   & SHF \\
+			\hline
+			LES  & \hl{667.32} &  212.56  \\
+			ALEX & 451.15 & 280.33 \\
+		\end{tabular} \\
+		\vspace{0.5cm}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Avec rv nudgé}
+
+\begin{minipage}{0.48\textwidth}
+		\centering
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\linewidth]{FIGURES/newSST/shf_flux}
+\end{figure}
+$\implies$ les champs nudgé ont une moyenne proche du REAL case, explication ??
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{newSST/comp_cut.png}
+		\begin{tabular}{c|cc}
+			&  LHF   & SHF \\
+			\hline
+			LES  & \hl{667.32} &  212.56  \\
+			ALEX & 451.15 & 280.33 \\
+		\end{tabular} \\
+		\vspace{0.5cm}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Avec rv nudgé}
+	
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\linewidth]{FIGURES/newSST/shf_flux}
+		\end{figure}
+		$\implies$ les champs nudgé ont une moyenne proche du REAL case, explication ??
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{newSST/comp_cut.png}
+		\begin{tabular}{c|cc}
+			&  LHF   & SHF \\
+			\hline
+			LES  & \hl{667.32} &  212.56  \\
+			ALEX & 451.15 & 280.33 \\
+		\end{tabular} \\
+		\vspace{0.5cm}
+	\end{minipage}
+\end{frame}
+
+
+\begin{frame}	
+	On peut s'interroger sur la sst: sst moyenné a-t-elle un impact ? \\
+	On pourrait sy attendre car LE depend de $\Delta q$ et $q{sat}$ depend de la température de la mer. 
+	\begin{minipage}{\textwidth}
+		\centering
+		\begin{figure}
+			\centering
+			\includegraphics[width=\linewidth]{FIGURES/newSST/beautiful_cut}
+			\caption{Vertical cut of the wind components}
+			\label{fig:shfflux}
+		\end{figure}
+	\end{minipage}
+\end{frame}
+
+
+\begin{frame}{Fonction d'auto-corrélation R}
+	\begin{minipage}{0.48\textwidth}
+		Les structures sont similaire entre REAL and IDEAL cases. \\ 
+		\centering
+		\includegraphics[width=1\linewidth]{newSST/acf.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{newSST/acf_slice.png}
+		\vspace{0.5cm}
+	\end{minipage}
+\end{frame}
+
+
+% =======================================================================================
+% =======================================================================================
+\section{Large scale à LES}
+\begin{frame}
+	\sectionpage
+\end{frame}
+\begin{frame}{Large Scale to LES?}
+	\textbf{Objectif}: D'un profil grande échelle, obtenir une simulation LES ? \\
+	Départ de la simulation à 800m de Nicolas.  \\
+	\begin{minipage}{0.35\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{bigDOM/bigDOM.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.55\textwidth}
+		\includegraphics[width=\linewidth]{bigDOM/profile.png}
+	\end{minipage} \\
+	Limitation est le nudging: impose une position à ce jet et empêche le transfert du vent moyen vers les couches les plus  basses.  \\
+\end{frame}
+
+\begin{frame}{Idée : Nudging adaptatif ?}
+	Implémentation d'un nudging qui suit les variations du profil vertical et notamment de la descente du jet vers les basses couches. \\
+	\vfill
+	$$ \partial_t \phi = - \frac{\alpha(z,t)}{\tau} \left( \langle \phi \rangle (z) - \phi_{LS}(z) \right) $$
+	où $\alpha(z,t)$ est fixe et égal à 1 maintenant. \\
+	Mais pourrait dépendre de la position du jet $z_{jet}$ ? \\
+	Propositions: centre de cisaillement, max ??
+	$$ z_{jet} = \frac{\int \left(\partial_z\langle U \rangle \right) ^2 z dz }{\int \left(\partial_z\langle U \rangle \right)^2 dz } $$ \\
+	$$ z_{jet} = max \left( \langle U \rangle (z) \right) $$
+	\vfill
+	Problème: possibilité de force de nudging qui "saute" : lissage/amortissement sur le temps. 
+\end{frame}
+\end{document}   

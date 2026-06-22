@@ -35,6 +35,15 @@
 \definecolor{electricgreen}{rgb}{0.0, 1.0, 0.0}
 \definecolor{electriclime}{rgb}{0.8, 1.0, 0.0}
 \definecolor{deepcarrotorange}{rgb}{0.91, 0.41, 0.17}
+\definecolor{ganttblue}   {HTML}{2B6CB0}
+\definecolor{ganttcyan}   {HTML}{2C7A7B}
+\definecolor{ganttgreen}  {HTML}{276749}
+\definecolor{ganttorange} {HTML}{C05621}
+\definecolor{ganttgray}   {HTML}{4A5568}
+\definecolor{ganttbg}     {HTML}{EBF4FF}
+\definecolor{ganttbar}    {HTML}{BEE3F8}
+\definecolor{milestonecol}{HTML}{E53E3E}
+
 
 % CESBIO ADAPTED BEAMER OPTIONS
 \setbeamercolor{title in head/foot}{bg=inchworm, fg=forestgreen}
@@ -45,30 +54,117 @@
 \usetheme{Warsaw}
 \usecolortheme[named=colorLAERO]{structure}
 
+
 % SPECIFIC COMMANDS
 % if you nee to set command for youe presentation, you can put them here
 \newcommand{\defnotation}[1]{\bf{\textsl{#1}}}
 
+\usepackage[
+citestyle=abbrv, 
+bibstyle=abbrv,
+style=authoryear, %-comp,
+backend=biber
+%maxbibnames=99, % Make sure we are printing all authors in the appendix
+]{biblatex}
 
-
+\usepackage{pgfgantt}
+\usepackage{helvet}
 % PRESENTATION INFORMATIONS
 % to fill in
 
 % \title[]{}
 % \subtitle{Subtitle}
 
-\titlegraphic{\includegraphics[height=2.0cm]{LAERO-logo.jpg}}
-\author[J.Hedman]{Johan Hedman}
-\institute[]{Team\\ LAERO}
+\usetikzlibrary{positioning, calc}
+\usetikzlibrary{calc}
+
+% ── Colours (adapt to your theme) ─────────────────────────────────────────────
+\definecolor{titleblue}  {HTML}{1A365D}
+\definecolor{accentblue} {HTML}{2B6CB0}
+\definecolor{lightgray}  {HTML}{EDF2F7}
+\definecolor{medgray}    {HTML}{718096}
+
+% ── Metadata ──────────────────────────────────────────────────────────────────
+\author[J.~Hedman]{Johan Hedman}
+\institute[LAERO]{Laboratoire d'Aérologie (LAERO) · Université de Toulouse}
 \date{\today}
 
-\usepackage[
-	citestyle=abbrv, 
-    bibstyle=abbrv,
-    style=authoryear, %-comp,
-    backend=biber
-    %maxbibnames=99, % Make sure we are printing all authors in the appendix
-    ]{biblatex}
+% ── Title frame ───────────────────────────────────────────────────────────────
+% Use a fully custom frame instead of \titlepage for full layout control
+\newcommand{\customtitleframe}{%
+\begin{frame}[plain]
+	\begin{tikzpicture}[remember picture, overlay]
+		
+		%% ── Background ─────────────────────────────────────────────────────────────
+		\fill[titleblue]
+		(current page.north west) rectangle
+		($(current page.north east) + (0, -0.38\paperheight)$);
+		
+		\fill[accentblue]
+		($(current page.north west) + (0, -0.38\paperheight)$) rectangle
+		($(current page.north east) + (0, -0.405\paperheight)$);
+		
+		%% ── Title block ────────────────────────────────────────────────────────────
+		\node[anchor=west, text=white, font=\large\bfseries, text width=0.95\paperwidth,] at 
+		($(current page.north west) + (0.7cm, -0.13\paperheight)$)
+		{Etude des rouleaux de couche limite sous les tempêtes};
+		
+		\node[anchor=west, text=white!70!titleblue, font=\small,text width=0.85\paperwidth,] at 
+		($(current page.north west) + (0.7cm, -0.26\paperheight)$)
+		{Johan Hedman \quad·\quad LAERO, Université de Toulouse \quad·\quad \insertdate};
+		
+		%% ── Supervisors ────────────────────────────────────────────────────────────
+		\node[anchor=north west, font=\bfseries\small\color{accentblue}] at 
+		($(current page.north west) + (0.7cm, -0.405\paperheight - 0.52cm)$)
+		{Supervision};
+		
+		\node[anchor=north west, font=\footnotesize\color{titleblue}, align=left, text width=0.38\paperwidth]
+		at ($(current page.north west) + (0.7cm, -0.405\paperheight - 1.0cm)$)
+		{%
+			\textbf{Prof. Jean-Pierre Chaboureau} \\
+			\textcolor{medgray}{LAERO, Université de Toulouse} \\[5pt]
+		};
+		
+		%% ── Divider ────────────────────────────────────────────────────────────────
+		\draw[accentblue!30, line width=0.5pt]
+		($(current page.north west) + (0.50\paperwidth, -0.405\paperheight - 0.50cm)$) --
+		($(current page.south west) + (0.50\paperwidth, 0.45cm)$);
+		
+		%% ── Jury ───────────────────────────────────────────────────────────────────
+		\node[anchor=north west, font=\bfseries\small\color{accentblue}]at ($(current page.north west) + (0.53\paperwidth, -0.405\paperheight - 0.52cm)$)
+		{Membre du CSI};
+		
+		\node[anchor=north west, font=\footnotesize\color{titleblue}, align=left, text width=0.42\paperwidth]
+		at ($(current page.north west) + (0.53\paperwidth, -0.405\paperheight - 1.0cm)$)
+		{%
+			\textbf{Prof } \textcolor{medgray}{\textit{}} \\
+			\textbf{Prof.~Firstname Lastname} \textcolor{medgray}{\textit{}} \\
+		};
+		
+		%% ── Logo strip ─────────────────────────────────────────────────────────────
+		\fill[white]
+		($(current page.south west) + (0, 0.10\paperheight)$)
+		rectangle (current page.south east);
+		
+		\draw[accentblue!25, line width=0.4pt]
+		($(current page.south west) + (0, 0.10\paperheight)$) --
+		($(current page.south east) + (0, 0.10\paperheight)$);
+		
+		\node[anchor=south west, xshift=0.5cm, yshift=0.20cm] at (current page.south west)		{\includegraphics[height=1.5cm]{LOGO/LAERO-logo.jpg}};
+		
+		\node[anchor=south, yshift=0.25cm] at (current page.south)
+			{\includegraphics[height=1.0cm]{LOGO/UNIV-logo.png}\hspace{1cm}%
+			\includegraphics[height=1.20cm]{LOGO/CNRS-logo.jpeg}};
+		
+		\node[anchor=south east, xshift=-0.5cm, yshift=0.20cm] at (current page.south east)
+		{\includegraphics[height=1.2cm]{LOGO/logo-IRD.png}};
+		
+	\end{tikzpicture}
+\end{frame}
+}
+
+
+
 
 
 % cesbio adapted frame structure
